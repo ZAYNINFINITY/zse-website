@@ -21,15 +21,30 @@
   </header>
 
   <main class="container">
-    <h1>Toilets</h1>
-    <section class="product-listing">
-      <ul>
-        <li><a href="one-piece-toilet.html">One Piece Toilet</a></li>
-        <li><a href="two-piece-toilets.html">Two Piece Toilets</a></li>
-        <li><a href="commode-seat-covers.html">Commode Seat Covers</a></li>
-        <li><a href="asian-toilet-seat-squatting.html">Asian Toilet Seat (Squatting)</a></li>
-      </ul>
-    </section>
+    <h1>Toilets Subcategories</h1>
+    <nav class="breadcrumb">
+      <a href="../../index.html">Home</a> > 
+      <a href="../index.html">Products</a> > 
+      Toilets
+    </nav>
+    <div class="subcategory-grid">
+      <a href="one-piece-toilet.html" class="subcategory-card">
+        <img src="../../assets/products/onepiece toilet.jpeg" alt="One Piece Toilet" />
+        One Piece Toilet
+      </a>
+      <a href="two-piece-toilets.html" class="subcategory-card">
+        <img src="../../assets/products/two piece toilet.jpeg" alt="Two Piece Toilets" />
+        Two Piece Toilets
+      </a>
+      <a href="commode-seat-covers.html" class="subcategory-card">
+        <img src="../../assets/products/Commode Seat Covers.jpeg" alt="Commode Seat Covers" />
+        Commode Seat Covers
+      </a>
+      <a href="asian-toilet-seat-squatting.html" class="subcategory-card">
+        <img src="../../assets/products/asian toilet seat squatting.jpeg" alt="Asian Toilet Seat Squatting" />
+        Asian Toilet Seat Squatting
+      </a>
+    </div>
   </main>
 
   <footer class="footer">
@@ -44,19 +59,63 @@
   </footer>
 
   <style>
-    .product-listing ul {
-      list-style-type: none;
-      padding-left: 0;
+    .subcategory-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 15px;
+      padding: 30px 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
     }
-    .product-listing li {
-      margin: 10px 0;
+    .subcategory-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: auto;
+      background: linear-gradient(135deg, #1f1f1f, #2a2a2a);
+      color: white;
+      font-size: 1.1rem;
+      font-weight: 700;
+      border-radius: 15px;
+      text-decoration: none;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+      padding: 15px;
+      border: 1px solid #444;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
     }
-    .product-listing a {
+    .subcategory-card:hover {
+      background-color: #0f6c29;
+      box-shadow: 0 12px 30px rgba(255, 215, 0, 0.8);
+      border-color: #ffd700;
+      cursor: pointer;
+    }
+    .subcategory-card img {
+      width: auto;
+      max-width: 100%;
+      height: 180px;
+      object-fit: contain;
+      border-radius: 15px;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+    }
+    .subcategory-card:hover img {
+      transform: scale(1.05);
+    }
+    .breadcrumb {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #ffd700;
+    }
+    .breadcrumb a {
       color: #ffd700;
       text-decoration: none;
-      font-size: 1.2rem;
     }
-    .product-listing a:hover {
+    .breadcrumb a:hover {
       text-decoration: underline;
     }
   </style>

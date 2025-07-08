@@ -11,34 +11,48 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 30px;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+      padding-bottom: 40px;
     }
     .product-card {
-      background-color: #121212;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-      width: 180px;
+      background: linear-gradient(135deg, #1f1f1f, #2a2a2a);
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+      width: 200px;
       text-align: center;
-      padding: 10px;
+      padding: 15px;
       color: white;
       text-decoration: none;
-      transition: transform 0.2s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid #444;
     }
     .product-card:hover {
-      transform: scale(1.05);
+      transform: scale(1.1);
+      box-shadow: 0 12px 30px rgba(255, 215, 0, 0.8);
+      border-color: #ffd700;
+      cursor: pointer;
     }
     .product-card img {
       width: 100%;
-      height: 140px;
-      object-fit: contain;
-      border-radius: 12px;
-      margin-bottom: 10px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 15px;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+    }
+    .product-card:hover img {
+      transform: scale(1.05);
     }
     .product-card span {
-      font-size: 1.1rem;
-      font-weight: 600;
+      font-size: 1.2rem;
+      font-weight: 700;
       display: block;
       color: #ffd700;
+      text-shadow: 0 0 5px #ffd700;
     }
     /* Dropdown menu styles */
     .nav-categories li {
@@ -77,7 +91,7 @@
   <header class="top-header-bar">
     <div class="container">
       <div class="logo">
-        <img src="assets/zse-logo.png" alt="ZSE Logo" class="logo-icon" />
+        <img src="assets/logo.png" alt="ZSE Logo" class="logo-icon" />
       </div>
       <nav class="top-nav-links">
         <a href="index.html">Home</a>
@@ -157,38 +171,38 @@
           <li><a href="products/watergeyser/instant-gas-water-heater.html">Instant Gas Water Heater</a></li>
         </ul>
       </li>
-      <li><a href="products/tiles.html">Tiles</a></li>
+      
     </ul>
   </nav>
 
   <!-- Product Cards Section -->
   <section class="product-cards-section container">
     <a href="products/taps/index.html" class="product-card">
-      <img src="assets/taps.jpg" alt="Taps" />
+      <img src="assets/products/taps.jpg" alt="Taps" />
       <span>Taps</span>
     </a>
     <a href="products/basins/index.html" class="product-card">
-      <img src="assets/basins.jpg" alt="Basins" />
+      <img src="assets/products/basins.jpeg" alt="Basins" />
       <span>Basins</span>
     </a>
     <a href="products/toilets/index.html" class="product-card">
-      <img src="assets/toilets.jpg" alt="Toilets" />
+      <img src="assets/products/toilets.jpeg" alt="Toilets" />
       <span>Toilets</span>
     </a>
     <a href="products/kitchen-ware/index.html" class="product-card">
-      <img src="assets/kitchen-ware.jpg" alt="Kitchen Ware" />
+      <img src="assets/products/kitchenware.jpeg" alt="Kitchen Ware" />
       <span>Kitchen Ware</span>
     </a>
     <a href="products/mirrors/index.html" class="product-card">
-      <img src="assets/mirrors.jpg" alt="Mirrors" />
+      <img src="assets/products/mirrors.jpeg" alt="Mirrors" />
       <span>Mirrors</span>
     </a>
     <a href="products/pipes-fitting/index.html" class="product-card">
-      <img src="assets/pipes.jpg" alt="Pipes & Fitting" />
+      <img src="assets/products/pipes and fitting.jpeg" alt="Pipes & Fitting" />
       <span>Pipes & Fitting</span>
     </a>
     <a href="products/watergeyser/index.html" class="product-card">
-      <img src="assets/geyser.jpg" alt="Water Geyser" />
+      <img src="assets/products/geysers.jpeg" alt="Water Geyser" />
       <span>Water Geyser</span>
     </a>
   </section>

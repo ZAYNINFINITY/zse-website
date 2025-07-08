@@ -53,3 +53,25 @@ function showCurrentSlide() {
     sliderContainer.classList.remove("blur-active");
   }
 }
+
+// Search bar functionality
+const searchInput = document.getElementById('searchkey');
+const searchButton = document.querySelector('.btn-search');
+
+function performSearch() {
+  const query = searchInput.value.trim();
+  if (query) {
+    // Redirect to products page with search query as URL parameter
+    window.location.href = `products.html?search=${encodeURIComponent(query)}`;
+  } else {
+    alert('Please enter a search term.');
+  }
+}
+
+searchButton.addEventListener('click', performSearch);
+
+searchInput.addEventListener('keydown', (event) => {
+  if (event.key === 'Enter') {
+    performSearch();
+  }
+});
