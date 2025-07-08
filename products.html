@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZSE - Products</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .product-cards-section {
+      padding: 60px 20px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .product-card {
+      background-color: #121212;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+      width: 180px;
+      text-align: center;
+      padding: 10px;
+      color: white;
+      text-decoration: none;
+      transition: transform 0.2s ease;
+    }
+    .product-card:hover {
+      transform: scale(1.05);
+    }
+    .product-card img {
+      width: 100%;
+      height: 140px;
+      object-fit: contain;
+      border-radius: 12px;
+      margin-bottom: 10px;
+    }
+    .product-card span {
+      font-size: 1.1rem;
+      font-weight: 600;
+      display: block;
+      color: #ffd700;
+    }
+    /* Dropdown menu styles */
+    .nav-categories li {
+      position: relative;
+    }
+    .nav-categories li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #138A36;
+      padding: 10px 0;
+      border-radius: 6px;
+      min-width: 180px;
+      z-index: 1000;
+    }
+    .nav-categories li:hover ul {
+      display: block;
+    }
+    .nav-categories li ul li {
+      padding: 8px 20px;
+    }
+    .nav-categories li ul li a {
+      color: white;
+      font-weight: normal;
+      text-decoration: none;
+    }
+    .nav-categories li ul li a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="top-header-bar">
+    <div class="container">
+      <div class="logo">
+        <img src="assets/zse-logo.png" alt="ZSE Logo" class="logo-icon" />
+      </div>
+      <nav class="top-nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Product Category Nav -->
+  <nav class="main-nav-menu">
+    <ul class="nav-categories container">
+      <li>
+        <a href="products/taps/index.html">Taps</a>
+        <ul>
+          <li><a href="products/taps/basin-mixers.html">Basin Mixers</a></li>
+          <li><a href="products/taps/sink-mixer.html">Sink Mixer</a></li>
+          <li><a href="products/taps/luxury-bathroom-shower-sets.html">Luxury Bathroom Shower Sets</a></li>
+          <li><a href="products/taps/pull-out-kitchen-taps.html">Pull Out Kitchen Taps</a></li>
+          <li><a href="products/taps/hand-shower.html">Hand Shower</a></li>
+          <li><a href="products/taps/muslim-shower.html">Muslim Shower</a></li>
+          <li><a href="products/taps/shower-heads.html">Shower Heads</a></li>
+          <li><a href="products/taps/shower-panels.html">Shower Panels</a></li>
+          <li><a href="products/taps/double-bibcock.html">Double Bibcock</a></li>
+          <li><a href="products/taps/tee-cock.html">Tee Cock</a></li>
+          <li><a href="products/taps/basin-waste.html">Basin Waste</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="products/basins/index.html">Basins</a>
+        <ul>
+          <li><a href="products/basins/basin-pedestal.html">Basin Pedestal</a></li>
+          <li><a href="products/basins/one-piece-basins.html">One Piece Basins</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="products/toilets/index.html">Toilets</a>
+        <ul>
+          <li><a href="products/toilets/one-piece-toilet.html">One Piece Toilet</a></li>
+          <li><a href="products/toilets/two-piece-toilets.html">Two Piece Toilets</a></li>
+          <li><a href="products/toilets/commode-seat-covers.html">Commode Seat Covers</a></li>
+          <li><a href="products/toilets/asian-toilet-seat-squatting.html">Asian Toilet Seat Squatting</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="products/kitchen-ware/index.html">Kitchen Ware</a>
+        <ul>
+          <li><a href="products/kitchen-ware/single-bowl-handmade-kitchen-sink.html">Single Bowl Handmade Kitchen Sink</a></li>
+          <li><a href="products/kitchen-ware/double-bowl-handmade-kitchen-sink.html">Double Bowl Handmade Kitchen Sink</a></li>
+          <li><a href="products/kitchen-ware/kitchen-hood.html">Kitchen Hood</a></li>
+          <li><a href="products/kitchen-ware/kitchen-accessories.html">Kitchen Accessories</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="products/mirrors/index.html">Mirrors</a>
+        <ul>
+          <li><a href="products/mirrors/standard.html">Standard</a></li>
+          <li><a href="products/mirrors/frameless.html">Frameless</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="products/pipes-fitting/index.html">Pipes & Fitting</a>
+        <ul>
+          <li><a href="products/pipes-fitting/ppr-pipes.html">PPR Pipes</a></li>
+          <li><a href="products/pipes-fitting/pipe-fittings.html">Pipe Fittings</a></li>
+          <li><a href="products/pipes-fitting/gi-pipes.html">GI Pipes</a></li>
+          <li><a href="products/pipes-fitting/pvc-pipes.html">PVC Pipes</a></li>
+          <li><a href="products/pipes-fitting/cpvc-pipes.html">CPVC Pipes</a></li>
+          <li><a href="products/pipes-fitting/hdpe-pipes.html">HDPE Pipes</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="products/watergeyser/index.html">Water Geyser</a>
+        <ul>
+          <li><a href="products/watergeyser/gas-water-geyser.html">Gas</a></li>
+          <li><a href="products/watergeyser/electric-water-geyser.html">Electric Water Heater</a></li>
+          <li><a href="products/watergeyser/instant-gas-water-heater.html">Instant Gas Water Heater</a></li>
+        </ul>
+      </li>
+      <li><a href="products/tiles.html">Tiles</a></li>
+    </ul>
+  </nav>
+
+  <!-- Product Cards Section -->
+  <section class="product-cards-section container">
+    <a href="products/taps/index.html" class="product-card">
+      <img src="assets/taps.jpg" alt="Taps" />
+      <span>Taps</span>
+    </a>
+    <a href="products/basins/index.html" class="product-card">
+      <img src="assets/basins.jpg" alt="Basins" />
+      <span>Basins</span>
+    </a>
+    <a href="products/toilets/index.html" class="product-card">
+      <img src="assets/toilets.jpg" alt="Toilets" />
+      <span>Toilets</span>
+    </a>
+    <a href="products/kitchen-ware/index.html" class="product-card">
+      <img src="assets/kitchen-ware.jpg" alt="Kitchen Ware" />
+      <span>Kitchen Ware</span>
+    </a>
+    <a href="products/mirrors/index.html" class="product-card">
+      <img src="assets/mirrors.jpg" alt="Mirrors" />
+      <span>Mirrors</span>
+    </a>
+    <a href="products/pipes-fitting/index.html" class="product-card">
+      <img src="assets/pipes.jpg" alt="Pipes & Fitting" />
+      <span>Pipes & Fitting</span>
+    </a>
+    <a href="products/watergeyser/index.html" class="product-card">
+      <img src="assets/geyser.jpg" alt="Water Geyser" />
+      <span>Water Geyser</span>
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p>Khyber Pakhtunkhwa, Haripur, Khalabat Twp, Qureshi Chowk, Sector #1, Main Road</p>
+      <p>&copy; 2025 ZSE - Zain Sanitary & Electric Store. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/products.js"></script>
+</body>
+</html>
