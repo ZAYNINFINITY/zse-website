@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Get in Touch - ZSE</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-color: #fff;
+      color: #000;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    h1 {
+      width: 100%;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    form.contact-form {
+      flex: 1 1 300px;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    form.contact-form label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+    form.contact-form input,
+    form.contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-family: inherit;
+      resize: vertical;
+    }
+    form.contact-form button {
+      background-color: #000;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+    form.contact-form button:hover {
+      background-color: #333;
+    }
+    .contact-info-box {
+      flex: 1 1 300px;
+      background: #f5f5f5;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .contact-info-box h3 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    .contact-info-box p {
+      margin: 6px 0;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .contact-info-box p svg {
+      width: 20px;
+      height: 20px;
+      fill: #000;
+    }
+    .map-embed {
+      margin-top: 15px;
+      border-radius: 8px;
+      overflow: hidden;
+      height: 180px;
+      width: 100%;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .map-embed iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .social-icons {
+      display: flex;
+      gap: 16px;
+      margin-top: 12px;
+    }
+    .social-icons a {
+      display: inline-flex;
+      width: 32px;
+      height: 32px;
+      background-color: #000;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .social-icons a:hover {
+      background-color: #333;
+    }
+    .social-icons svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="top-header-bar">
+    <div class="container">
+      <div class="logo">
+        <img src="assets/logo.png" alt="ZSE Logo" class="logo-icon" />
+      </div>
+      <nav class="top-nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="order-hotline">
+        <span>Order Hotline</span><br />
+        <a href="tel:+923185929927">+92-3185929927</a><br />
+        <span>Call or WhatsApp</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Get in Touch</h1>
+
+    <form class="contact-form" action="#" method="post">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+
+    <div class="contact-info-box">
+      <h3>Contact Us</h3>
+      <div class="map-embed">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.034095095927!2d72.9116999152583!3d34.01959708061544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38de4d467ea4cb49%3A0x44163e6200d5528e!2sSector%2001%2C%20Khalabat%20Twp%2C%20Pakistan!5e0!3m2!1sen!2s!4v1686765432100!5m2!1sen!2s"
+          width="100%"
+          height="180"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.21.49 2.53.76 3.88.76a1 1 0 011 1v3.5a1 1 0 01-1 1A17 17 0 013 6a1 1 0 011-1h3.5a1 1 0 011 1c0 1.35.27 2.67.76 3.88a1 1 0 01-.21 1.11l-2.2 2.2z"/></svg>
+        +92 3185929927
+      </p>
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        info@zainstore.com
+      </p>
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm0 16H5V8h14z"/></svg>
+        Mon - Sat: 9am - 8pm
+      </p>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 12a10 10 0 10-11.5 9.87v-7h-2v-3h2v-2c0-2 1-3 3-3h2v3h-2v2h2l-1 3h-1v7A10 10 0 0022 12z"/></svg>
+        </a>
+        <a href="#" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 3a1 1 0 110 2 1 1 0 010-2zm-5 2a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6z"/></svg>
+        </a>
+        <a href="#" aria-label="WhatsApp">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.52 3.48A11.815 11.815 0 0012 0C5.373 0 0 5.373 0 12c0 2.11.55 4.09 1.6 5.84L0 24l6.36-1.6A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12 0-3.2-1.25-6.21-3.48-8.52zm-8.52 17.52c-1.92 0-3.72-.52-5.28-1.44l-.38-.22-3.78 1 1-3.7-.25-.38A8.94 8.94 0 013 12c0-5 4-9 9-9 2.4 0 4.66.93 6.36 2.64a8.87 8.87 0 012.64 6.36c0 5-4 9-9 9zm5.22-7.5c-.28-.14-1.66-.82-1.92-.91-.26-.1-.45-.14-.64.14-.19.28-.74.91-.9 1.1-.16.19-.32.21-.6.07-.28-.14-1.18-.44-2.25-1.39-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.12-.12.28-.32.42-.48.14-.16.19-.28.28-.46.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.48-.64-.49-.16-.01-.35-.01-.54-.01-.19 0-.49.07-.75.35-.26.28-1 1-1 2.44 0 1.44 1.03 2.83 1.17 3.03.14.19 2.02 3.08 4.9 4.32.68.29 1.21.46 1.62.59.68.22 1.3.19 1.79.12.55-.08 1.66-.68 1.9-1.33.23-.64.23-1.19.16-1.33-.07-.14-.26-.22-.54-.36z"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-content">
+          <p>&copy; 2025 ZSE - Zain Sanitary & Electric Store. All rights reserved.</p>
+          <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+      </footer>
+
+</body>
+</html>
