@@ -14,21 +14,7 @@ The project is actively being worked on, with frequent updates and improvements 
 
 [ZSE Store on Netlify](https://zsestore.netlify.app)
 
----
 
-## Project Structure
-
-zse-website/
-│-- index.html # Main landing page
-│-- products/ # Product pages
-│-- assets/ # Images, icons, media
-│-- css/ # Stylesheets
-│-- js/ # JavaScript files
-│-- README.md # Project documentation
-
-
-
----
 
 ## Development Notes
 
