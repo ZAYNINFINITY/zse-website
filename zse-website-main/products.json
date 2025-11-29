@@ -1,0 +1,254 @@
+[
+  {
+    "name": "Basin Mixer",
+    "category": "Sanitary",
+    "price": "PKR 2500",
+    "image": "assets/products/basin mixer.jpeg",
+    "description": "High-quality basin mixer for modern bathrooms"
+  },
+  {
+    "name": "Basin Pedestal",
+    "category": "Sanitary",
+    "price": "PKR 3500",
+    "image": "assets/products/basin pedestal.jpeg",
+    "description": "Elegant pedestal for basin installation"
+  },
+  {
+    "name": "Basin Waste",
+    "category": "Sanitary",
+    "price": "PKR 800",
+    "image": "assets/products/basin waste.jpeg",
+    "description": "Durable basin waste fitting"
+  },
+  {
+    "name": "Basins",
+    "category": "Sanitary",
+    "price": "PKR 4500",
+    "image": "assets/products/basins.jpeg",
+    "description": "Stylish ceramic basins for bathrooms"
+  },
+  {
+    "name": "Commode Seat Covers",
+    "category": "Sanitary",
+    "price": "PKR 1200",
+    "image": "assets/products/Commode Seat Covers.jpeg",
+    "description": "Comfortable and hygienic seat covers"
+  },
+  {
+    "name": "CPVC Pipes",
+    "category": "Sanitary",
+    "price": "PKR 300/meter",
+    "image": "assets/products/cpvc pipes.jpeg",
+    "description": "Reliable CPVC pipes for plumbing"
+  },
+  {
+    "name": "Double Bib Cock",
+    "category": "Sanitary",
+    "price": "PKR 1500",
+    "image": "assets/products/double bib cock.jpeg",
+    "description": "Heavy-duty double bib cock"
+  },
+  {
+    "name": "Double Bowl Handmade Kitchen Sink",
+    "category": "Sanitary",
+    "price": "PKR 8000",
+    "image": "assets/products/double bowl handmade kitchen sink.jpg",
+    "description": "Handcrafted double bowl kitchen sink"
+  },
+  {
+    "name": "Frameless Mirror",
+    "category": "Sanitary",
+    "price": "PKR 2200",
+    "image": "assets/products/frameless mirror.jpg",
+    "description": "Modern frameless bathroom mirror"
+  },
+  {
+    "name": "GI Pipes",
+    "category": "Sanitary",
+    "price": "PKR 400/meter",
+    "image": "assets/products/GI pipes.jpg",
+    "description": "Galvanized iron pipes for durability"
+  },
+  {
+    "name": "Hand Shower",
+    "category": "Sanitary",
+    "price": "PKR 1800",
+    "image": "assets/products/hand shower.jpeg",
+    "description": "Adjustable hand shower head"
+  },
+  {
+    "name": "HDPE Pipes",
+    "category": "Sanitary",
+    "price": "PKR 250/meter",
+    "image": "assets/products/hdpe pipes.jpeg",
+    "description": "Flexible HDPE pipes for various uses"
+  },
+  {
+    "name": "Kitchen Hood",
+    "category": "Sanitary",
+    "price": "PKR 15000",
+    "image": "assets/products/kitchen hoods.jpeg",
+    "description": "Efficient kitchen exhaust hood"
+  },
+  {
+    "name": "Kitchenware",
+    "category": "Sanitary",
+    "price": "PKR 5000",
+    "image": "assets/products/kitchenware.jpeg",
+    "description": "Essential kitchen accessories set"
+  },
+  {
+    "name": "Luxury Shower Sets",
+    "category": "Sanitary",
+    "price": "PKR 12000",
+    "image": "assets/products/luxury shower sets.jpeg",
+    "description": "Complete luxury bathroom shower set"
+  },
+  {
+    "name": "Mirrors",
+    "category": "Sanitary",
+    "price": "PKR 2000",
+    "image": "assets/products/mirrors.jpeg",
+    "description": "Standard bathroom mirrors"
+  },
+  {
+    "name": "Muslim Shower",
+    "category": "Sanitary",
+    "price": "PKR 2500",
+    "image": "assets/products/muslim shower.jpeg",
+    "description": "Specialized Muslim shower system"
+  },
+  {
+    "name": "One Piece Basin",
+    "category": "Sanitary",
+    "price": "PKR 5500",
+    "image": "assets/products/onepiece basin.jpeg",
+    "description": "One-piece basin for compact spaces"
+  },
+  {
+    "name": "One Piece Toilet",
+    "category": "Sanitary",
+    "price": "PKR 18000",
+    "image": "assets/products/onepiece toilet.jpeg",
+    "description": "Modern one-piece toilet"
+  },
+  {
+    "name": "Pipe Fittings",
+    "category": "Sanitary",
+    "price": "PKR 200-500",
+    "image": "assets/products/Pipe Fittings.jpg",
+    "description": "Various pipe fittings for plumbing"
+  },
+  {
+    "name": "Pipes and Fitting",
+    "category": "Sanitary",
+    "price": "PKR 300-600",
+    "image": "assets/products/pipes and fitting.jpeg",
+    "description": "Complete pipes and fittings kit"
+  },
+  {
+    "name": "PPR Pipes",
+    "category": "Sanitary",
+    "price": "PKR 350/meter",
+    "image": "assets/products/ppr pipes.avif",
+    "description": "High-quality PPR pipes"
+  },
+  {
+    "name": "Pull Out Kitchen Tap",
+    "category": "Sanitary",
+    "price": "PKR 4000",
+    "image": "assets/products/pull out kitchen tap.jpeg",
+    "description": "Convenient pull-out kitchen faucet"
+  },
+  {
+    "name": "PVC Pipes",
+    "category": "Sanitary",
+    "price": "PKR 200/meter",
+    "image": "assets/products/pvc pipes.jpeg",
+    "description": "Versatile PVC pipes"
+  },
+  {
+    "name": "Shower Heads",
+    "category": "Sanitary",
+    "price": "PKR 1500",
+    "image": "assets/products/shower heads.jpeg",
+    "description": "Various shower head options"
+  },
+  {
+    "name": "Shower Panels",
+    "category": "Sanitary",
+    "price": "PKR 25000",
+    "image": "assets/products/shower panels.avif",
+    "description": "Luxury shower panels"
+  },
+  {
+    "name": "Sink Mixer",
+    "category": "Sanitary",
+    "price": "PKR 3000",
+    "image": "assets/products/sink mixer.jpeg",
+    "description": "Kitchen sink mixer tap"
+  },
+  {
+    "name": "Standard Mirror",
+    "category": "Sanitary",
+    "price": "PKR 1800",
+    "image": "assets/products/standard mirror.jpeg",
+    "description": "Standard bathroom mirror"
+  },
+  {
+    "name": "Taps",
+    "category": "Sanitary",
+    "price": "PKR 2000-5000",
+    "image": "assets/products/taps.jpg",
+    "description": "Wide range of taps"
+  },
+  {
+    "name": "Tee Cock",
+    "category": "Sanitary",
+    "price": "PKR 1000",
+    "image": "assets/products/tee cock.jpeg",
+    "description": "Tee cock for plumbing"
+  },
+  {
+    "name": "Toilets",
+    "category": "Sanitary",
+    "price": "PKR 15000-25000",
+    "image": "assets/products/toilets.jpeg",
+    "description": "Various toilet options"
+  },
+  {
+    "name": "Two Piece Toilet",
+    "category": "Sanitary",
+    "price": "PKR 20000",
+    "image": "assets/products/two piece toilet.jpeg",
+    "description": "Two-piece toilet set"
+  },
+  {
+    "name": "Asian Toilet Seat Squatting",
+    "category": "Sanitary",
+    "price": "PKR 3000",
+    "image": "assets/products/asian toilet seat squatting.jpeg",
+    "description": "Traditional Asian squatting toilet"
+  },
+  {
+    "name": "Electric Water Heater",
+    "category": "Electrical",
+    "price": "PKR 15000",
+    "image": "assets/products/electric water heater.jpeg",
+    "description": "Efficient electric water heater"
+  },
+  {
+    "name": "Gas Water Heater",
+    "category": "Electrical",
+    "price": "PKR 18000",
+    "image": "assets/products/gas water heater.jpeg",
+    "description": "Gas-powered water heater"
+  },
+  {
+    "name": "Geysers",
+    "category": "Electrical",
+    "price": "PKR 12000-20000",
+    "image": "assets/products/geysers.jpeg",
+    "description": "Range of water geysers"
+  }
+]
