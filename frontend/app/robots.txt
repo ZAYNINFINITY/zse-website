@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Sitemap: https://zsestore.netlify.app/sitemap.xml
+
+
