@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products - ZSE Store</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ---- Page header ---- */
+    .page-hero {
+      background: #000;
+      padding: 30px 20px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    .page-hero h1 { color: #fff; font-size: 2rem; margin: 0 0 6px; }
+    .page-hero p { color: #aaa; margin: 0; font-size: 0.95rem; }
+
+    /* ---- Search bar inside products page ---- */
+    .products-search-bar {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding: 20px;
+      background: #0a0a0a;
+    }
+    .products-search-bar input {
+      padding: 12px 16px;
+      border-radius: 8px;
+      border: 1px solid #333;
+      background: #1a1a1a;
+      color: #fff;
+      font-size: 1rem;
+      width: 340px;
+      max-width: 100%;
+    }
+    .products-search-bar input:focus { outline: none; border-color: #ffd700; }
+    .products-search-bar button {
+      padding: 12px 20px;
+      background: #ffd700;
+      color: #121212;
+      border: none;
+      border-radius: 8px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    /* ---- Filter bar ---- */
+    .filter-section {
+      background: #111;
+      padding: 16px 20px;
+      border-bottom: 1px solid #222;
+    }
+    .filter-wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .filter-label { color: #aaa; font-size: 0.85rem; white-space: nowrap; }
+    .filter-btn {
+      background: #1e1e1e;
+      color: #ccc;
+      border: 1px solid #333;
+      padding: 8px 16px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: #ffd700;
+      color: #121212;
+      border-color: #ffd700;
+    }
+    .product-count {
+      margin-left: auto;
+      color: #666;
+      font-size: 0.85rem;
+    }
+
+    /* ---- Products grid ---- */
+    .products-grid-wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px 20px 60px;
+    }
+    .products-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 24px;
+    }
+    .product-card {
+      background: linear-gradient(135deg, #1a1a1a, #222);
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid #333;
+      transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+      display: flex;
+      flex-direction: column;
+    }
+    .product-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(255,215,0,0.15);
+      border-color: #ffd700;
+    }
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-bottom: 1px solid #333;
+    }
+    .product-info {
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .product-category-tag {
+      font-size: 0.7rem;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+    }
+    .product-name {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 4px;
+      line-height: 1.3;
+    }
+    .product-variant {
+      font-size: 0.8rem;
+      color: #aaa;
+      margin-bottom: 4px;
+    }
+    .product-sku {
+      font-size: 0.75rem;
+      color: #555;
+      margin-bottom: 10px;
+    }
+    .product-price {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #ffd700;
+      margin-bottom: 8px;
+    }
+    .product-stock {
+      font-size: 0.78rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .product-stock.in-stock { color: #4caf50; }
+    .product-stock.out-stock { color: #ff9800; }
+    .quote-btn {
+      margin-top: auto;
+      background: #ffd700;
+      color: #121212;
+      border: none;
+      padding: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 0.9rem;
+      transition: background 0.2s;
+      width: 100%;
+    }
+    .quote-btn:hover { background: #e6c200; }
+
+    /* ---- Quote Modal ---- */
+    .modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.85);
+      z-index: 2000;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-content {
+      background: #1e1e1e;
+      border: 1px solid #444;
+      border-radius: 16px;
+      padding: 30px;
+      width: 90%;
+      max-width: 480px;
+      position: relative;
+      color: #fff;
+    }
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    .modal-header h2 { margin: 0; font-size: 1.3rem; }
+    .modal-product-name {
+      color: #ffd700;
+      font-size: 0.9rem;
+      margin-top: 4px;
+    }
+    .close {
+      background: none;
+      border: none;
+      color: #aaa;
+      font-size: 1.6rem;
+      cursor: pointer;
+      line-height: 1;
+      padding: 0;
+    }
+    .close:hover { color: #fff; }
+    .modal form { display: flex; flex-direction: column; gap: 12px; }
+    .modal input, .modal textarea {
+      padding: 12px;
+      border: 1px solid #444;
+      border-radius: 8px;
+      background: #121212;
+      color: #fff;
+      font-size: 0.95rem;
+      font-family: inherit;
+    }
+    .modal input:focus, .modal textarea:focus { outline: none; border-color: #ffd700; }
+    .modal button[type="submit"] {
+      background: #25D366;
+      color: #fff;
+      border: none;
+      padding: 14px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .modal button[type="submit"]:hover { background: #1ebe57; }
+    .modal-hint { font-size: 0.78rem; color: #666; text-align: center; }
+
+    @media (max-width: 600px) {
+      .products-search-bar input { width: 100%; }
+      .products-search-bar { flex-direction: column; padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="top-header-bar">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"><img src="assets/logo.png" alt="ZSE Logo" class="logo-icon" /></a>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search products..." id="searchkey" />
+        <button class="btn-search">Search</button>
+      </div>
+      <nav class="nav-categories">
+        <a href="index.html">Home</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="order-hotline">
+        <span>Order Hotline</span><br />
+        <a href="tel:+923185929927">+92-318-5929927</a><br />
+        <span>Call or WhatsApp</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <h1>Our Products</h1>
+    <p>310 sanitary & plumbing products — browse, then call or WhatsApp to order</p>
+  </div>
+
+  <!-- Filter Bar -->
+  <div class="filter-section">
+    <div class="filter-wrap">
+      <span class="filter-label">Filter:</span>
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="Sanitary Fittings">Sanitary Fittings</button>
+      <button class="filter-btn" data-filter="Accessories">Accessories</button>
+      <button class="filter-btn" data-filter="Pipes & Fittings">Pipes & Fittings</button>
+      <button class="filter-btn" data-filter="Water Tanks">Water Tanks</button>
+      <button class="filter-btn" data-filter="Ceramics">Ceramics</button>
+      <span class="product-count" id="productCount"></span>
+    </div>
+  </div>
+
+  <!-- Products Grid -->
+  <div class="products-grid-wrap">
+    <div class="products-container" id="productsContainer">
+      <p style="color:#aaa;padding:40px;text-align:center;grid-column:1/-1">Loading products...</p>
+    </div>
+  </div>
+
+  <!-- Quote Modal -->
+  <div id="quoteModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div>
+          <h2>Request a Quote</h2>
+          <div class="modal-product-name" id="modalProductName"></div>
+        </div>
+        <button class="close" onclick="closeQuoteModal()">&times;</button>
+      </div>
+      <form id="quoteForm">
+        <input type="hidden" id="modalProductSKU" />
+        <input type="hidden" id="modalProductPrice" />
+        <input type="text" id="customerName" placeholder="Your Name" required />
+        <input type="tel" id="customerContact" placeholder="Phone / WhatsApp Number" required />
+        <input type="number" id="quantity" placeholder="Quantity" min="1" required />
+        <textarea id="additionalInfo" placeholder="Any notes (optional)" rows="3"></textarea>
+        <button type="submit">📲 Send via WhatsApp</button>
+        <p class="modal-hint">This will open WhatsApp with your enquiry pre-filled.</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/923185929927" target="_blank" class="floating-whatsapp" title="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 48 48">
+      <circle cx="24" cy="24" r="24" fill="#25D366"/>
+      <path fill="#fff" d="M35.2 12.8A15.8 15.8 0 0 0 8.1 30.7L6 42l11.6-3A15.8 15.8 0 0 0 35.2 12.8zm-11.2 24.3a13.1 13.1 0 0 1-6.7-1.8l-.5-.3-5.1 1.3 1.4-4.9-.3-.5a13.1 13.1 0 1 1 11.2 6.2zm7.2-9.8c-.4-.2-2.3-1.1-2.7-1.3-.4-.1-.6-.2-.9.2s-1 1.3-1.2 1.6c-.2.3-.5.3-.9.1a11.3 11.3 0 0 1-3.3-2 12.4 12.4 0 0 1-2.3-2.8c-.2-.4 0-.6.2-.8l.6-.7.4-.7.1-.5-1.2-2.9c-.3-.7-.6-.6-.9-.6h-.7c-.3 0-.7.1-1 .5a4.5 4.5 0 0 0-1.4 3.3 7.8 7.8 0 0 0 1.6 4.1 17.9 17.9 0 0 0 6.8 6 9.7 9.7 0 0 0 4.5 1.2 4.1 4.1 0 0 0 2.7-1 4.6 4.6 0 0 0 1.4-3c.1-.6-.2-.9-.5-1z"/>
+    </svg>
+  </a>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p>Khalabat Township, Qureshi Chowk, Sector #1, Main Road, Haripur, KPK</p>
+      <p>© 2025 ZSE - Zain Sanitary & Electric Store. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+</body>
+</html>

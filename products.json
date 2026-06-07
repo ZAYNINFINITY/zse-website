@@ -1,0 +1,3102 @@
+[
+  {
+    "sku": "GM",
+    "name": "Angle Nipple Master",
+    "variant": "GI/Brass",
+    "category": "Sanitary Fittings",
+    "selling_price": 250,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "GZ",
+    "name": "Angle Nipple Z",
+    "variant": "GI/Brass",
+    "category": "Sanitary Fittings",
+    "selling_price": 260,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "BLV20MM",
+    "name": "Ball Valve 20mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 630,
+    "stock": 7,
+    "in_stock": true,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "BLV25MM",
+    "name": "Ball Valve 25mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 1165,
+    "stock": 2,
+    "in_stock": true,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "BLV32MM",
+    "name": "Ball Valve 32mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 1900,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "BLV40MM",
+    "name": "Ball Valve 40mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 3145,
+    "stock": 3,
+    "in_stock": true,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "BVF2",
+    "name": "Ball Valve GI 1/2",
+    "variant": "GI/Brass",
+    "category": "Sanitary Fittings",
+    "selling_price": 530,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "BVF4",
+    "name": "Ball Valve GI 3/4",
+    "variant": "GI/Brass",
+    "category": "Sanitary Fittings",
+    "selling_price": 600,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "BVIL2",
+    "name": "Ball Valve IL GI 1/2",
+    "variant": "GI/Brass",
+    "category": "Sanitary Fittings",
+    "selling_price": 490,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "BVNR",
+    "name": "Ball Valve RBS 1/2",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 490,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "BVF1",
+    "name": "Ball Valve RBS 1in",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 900,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "BVS2",
+    "name": "Ball Valve Shahzad 1/2",
+    "variant": "Tap/Valve",
+    "category": "Sanitary Fittings",
+    "selling_price": 330,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "BVS4",
+    "name": "Ball Valve Shahzad 3/4",
+    "variant": "Tap/Valve",
+    "category": "Sanitary Fittings",
+    "selling_price": 420,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "BMJ",
+    "name": "Basin Mixer Tempo",
+    "variant": "Tap/Valve",
+    "category": "Accessories",
+    "selling_price": 1850,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "BMYS",
+    "name": "Basin Mixer YS",
+    "variant": "Tap/Valve",
+    "category": "Accessories",
+    "selling_price": 1450,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "BW",
+    "name": "Basin Waste",
+    "variant": "Bathroom",
+    "category": "Accessories",
+    "selling_price": 200,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "BAS2",
+    "name": "Bath Accessories Set Good",
+    "variant": "Bathroom",
+    "category": "Accessories",
+    "selling_price": 1600,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "BASS",
+    "name": "Bath Accessories Set Steel",
+    "variant": "Bathroom",
+    "category": "Accessories",
+    "selling_price": 1500,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "BASW",
+    "name": "Bath Accessories Set Wooden",
+    "variant": "Bathroom",
+    "category": "Accessories",
+    "selling_price": 1950,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "PB3",
+    "name": "Bend MFit 3in",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 250,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "PB4",
+    "name": "Bend MFit 4in",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 300,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "BCM",
+    "name": "Bibcock Brass 1/2",
+    "variant": "Tap/Valve",
+    "category": "Accessories",
+    "selling_price": 150,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "BCC",
+    "name": "Bibcock China 1/2",
+    "variant": "Tap/Valve",
+    "category": "Accessories",
+    "selling_price": 350,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "BCH",
+    "name": "Bibcock Handle 1/2",
+    "variant": "Tap/Valve",
+    "category": "Accessories",
+    "selling_price": 150,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "BCN",
+    "name": "Bibcock Nector",
+    "variant": "Tap/Valve",
+    "category": "Accessories",
+    "selling_price": 150,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "BCNM",
+    "name": "Bibcock New Master",
+    "variant": "Tap/Valve",
+    "category": "Accessories",
+    "selling_price": 450,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "BCT",
+    "name": "Bibcock Plastic 1/2",
+    "variant": "Tap/Valve",
+    "category": "Accessories",
+    "selling_price": 135,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "BCYS",
+    "name": "Bibcock YS",
+    "variant": "Tap/Valve",
+    "category": "Accessories",
+    "selling_price": 430,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "B",
+    "name": "Blade",
+    "variant": "General",
+    "category": "Accessories",
+    "selling_price": 30,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "BKN",
+    "name": "Bolt Kit Normal",
+    "variant": "General",
+    "category": "Accessories",
+    "selling_price": 65,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "BKS",
+    "name": "Bolt Kit Steel",
+    "variant": "General",
+    "category": "Accessories",
+    "selling_price": 150,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "BH",
+    "name": "Brush Holder",
+    "variant": "Bathroom",
+    "category": "Accessories",
+    "selling_price": 250,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "CBA25",
+    "name": "C-Band ACCUFIT 25mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 65,
+    "stock": 84,
+    "in_stock": true,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "CBA32",
+    "name": "C-Band ACCUFIT 32mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 114,
+    "stock": 132,
+    "in_stock": true,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "CBM25",
+    "name": "C-Band Master 25mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 58,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "CBM32",
+    "name": "C-Band Master 32mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 67,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "CPC",
+    "name": "CP Chain Toilet Shower",
+    "variant": "Tap/Valve",
+    "category": "Accessories",
+    "selling_price": 170,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "CPN112",
+    "name": "CP Nozzle 1-1/2",
+    "variant": "Tap/Valve",
+    "category": "Sanitary Fittings",
+    "selling_price": 100,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "CPN1",
+    "name": "CP Nozzle 1in",
+    "variant": "Tap/Valve",
+    "category": "Sanitary Fittings",
+    "selling_price": 90,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "CO3",
+    "name": "Clean Out 3in",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 260,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "CO4",
+    "name": "Clean Out 4in",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 300,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "D",
+    "name": "Dhaga",
+    "variant": "General",
+    "category": "Accessories",
+    "selling_price": 8,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "DBYS",
+    "name": "Double Bibcock Tempo",
+    "variant": "Tap/Valve",
+    "category": "Accessories",
+    "selling_price": 850,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "DHH",
+    "name": "Dress Holder Heavy",
+    "variant": "Bathroom",
+    "category": "Accessories",
+    "selling_price": 250,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "DHN",
+    "name": "Dress Holder Normal",
+    "variant": "Bathroom",
+    "category": "Accessories",
+    "selling_price": 100,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "ELB45110MM",
+    "name": "Elbow 45 110mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 4537,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "ELB4520MM",
+    "name": "Elbow 45 20mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 42,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "ELB4525MM",
+    "name": "Elbow 45 25mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 66,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "ELB4532MM",
+    "name": "Elbow 45 32mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 105,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "ELB4540MM",
+    "name": "Elbow 45 40mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 177,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "ELB4550MM",
+    "name": "Elbow 45 50mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 330,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "ELB4563MM",
+    "name": "Elbow 45 63mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 657,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "ELB4575MM",
+    "name": "Elbow 45 75mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 1593,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "ELB4590MM",
+    "name": "Elbow 45 90mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 2979,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "ELB90110MM",
+    "name": "Elbow 90 110mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 6650,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "ELB9020MM",
+    "name": "Elbow 90 20mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 44,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "ELB9025MM",
+    "name": "Elbow 90 25mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 70,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "ELB9032MM",
+    "name": "Elbow 90 32mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 121,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "ELB9040MM",
+    "name": "Elbow 90 40mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 220,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "ELB9050MM",
+    "name": "Elbow 90 50mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 348,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "ELB9063MM",
+    "name": "Elbow 90 63mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 646,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "ELB9075MM",
+    "name": "Elbow 90 75mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 2166,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "ELB9090MM",
+    "name": "Elbow 90 90mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 3863,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "PE32",
+    "name": "Elbow MFit 3x2",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 200,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "PE43",
+    "name": "Elbow MFit 4x3",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 230,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "EA25",
+    "name": "Elbow PPR ACCUFIT 25mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 30,
+    "stock": 62,
+    "in_stock": true,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "EA2545",
+    "name": "Elbow PPR ACCUFIT 25mm 45deg",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 35,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "EA252",
+    "name": "Elbow PPR ACCUFIT 25x1/2",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 108,
+    "stock": 43,
+    "in_stock": true,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "EA2534",
+    "name": "Elbow PPR ACCUFIT 25x3/4",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 145,
+    "stock": 259,
+    "in_stock": true,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "EA2532",
+    "name": "Elbow PPR ACCUFIT 25x32",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 55,
+    "stock": 219,
+    "in_stock": true,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "EA32",
+    "name": "Elbow PPR ACCUFIT 32mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 45,
+    "stock": 79,
+    "in_stock": true,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "EA3245",
+    "name": "Elbow PPR ACCUFIT 32mm 45deg",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 62,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "EA322",
+    "name": "Elbow PPR ACCUFIT 32x1/2",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 180,
+    "stock": 219,
+    "in_stock": true,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "EA324",
+    "name": "Elbow PPR ACCUFIT 32x3/4",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 210,
+    "stock": 404,
+    "in_stock": true,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "EM25",
+    "name": "Elbow PPR Master 25mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 89,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "EM2545",
+    "name": "Elbow PPR Master 25mm 45deg",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 35,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "EM252",
+    "name": "Elbow PPR Master 25x1/2",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 122,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "EM2534",
+    "name": "Elbow PPR Master 25x3/4",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 144,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "EM2532",
+    "name": "Elbow PPR Master 25x32",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 60,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "EM32",
+    "name": "Elbow PPR Master 32mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 84,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "EM322",
+    "name": "Elbow PPR Master 32x1/2",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 212,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "EM324",
+    "name": "Elbow PPR Master 32x3/4",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 232,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "PE2",
+    "name": "Elbow PVC 2in",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 80,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "PE345",
+    "name": "Elbow PVC 45 3in",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 140,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "PE445",
+    "name": "Elbow PVC 45 4in",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 270,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "PE3",
+    "name": "Elbow PVC 90 3in",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 140,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "PE4",
+    "name": "Elbow PVC 90 4in",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 270,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "PEC3",
+    "name": "End Cap 3in",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 130,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "PEC4",
+    "name": "End Cap 4in",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 150,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "ECA25",
+    "name": "End Cap ACCUFIT 25mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 20,
+    "stock": 24,
+    "in_stock": true,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "ECA32",
+    "name": "End Cap ACCUFIT 32mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 25,
+    "stock": 36,
+    "in_stock": true,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "ECM25",
+    "name": "End Cap Master 25mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 20,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "ECM32",
+    "name": "End Cap Master 32mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 30,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "TEQ110MM",
+    "name": "Equal Tee 110mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 7506,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "TEQ20MM",
+    "name": "Equal Tee 20mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 66,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "TEQ25MM",
+    "name": "Equal Tee 25mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 86,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "TEQ32MM",
+    "name": "Equal Tee 32mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 153,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "TEQ40MM",
+    "name": "Equal Tee 40mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 245,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "TEQ50MM",
+    "name": "Equal Tee 50mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 465,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "TEQ63MM",
+    "name": "Equal Tee 63mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 893,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "TEQ75MM",
+    "name": "Equal Tee 75mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 2299,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "TEQ90MM",
+    "name": "Equal Tee 90mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 4073,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "FP",
+    "name": "Flexible Pipe",
+    "variant": "General",
+    "category": "Accessories",
+    "selling_price": 140,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "FWS",
+    "name": "Floor Waste Steel 6x6",
+    "variant": "Hardware",
+    "category": "Accessories",
+    "selling_price": 330,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "FV",
+    "name": "Foot Valve 1in Brass",
+    "variant": "Tap/Valve",
+    "category": "Sanitary Fittings",
+    "selling_price": 600,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "FVM",
+    "name": "Foot Valve 1in Mughal",
+    "variant": "Tap/Valve",
+    "category": "Sanitary Fittings",
+    "selling_price": 550,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "efm1",
+    "name": "GI Elbow FM 1in",
+    "variant": "GI/Brass",
+    "category": "Sanitary Fittings",
+    "selling_price": 150,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "efm4",
+    "name": "GI Elbow FM 3/4",
+    "variant": "GI/Brass",
+    "category": "Sanitary Fittings",
+    "selling_price": 100,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "GP34",
+    "name": "Garden Pipe Per Foot",
+    "variant": "General",
+    "category": "Accessories",
+    "selling_price": 38,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "GTVL20X34",
+    "name": "Gate Valve 20x3/4",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 0,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "GTVL25X34",
+    "name": "Gate Valve 25x3/4",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 0,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "GTVL32X1",
+    "name": "Gate Valve 32x1",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 0,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "GTVL40X114",
+    "name": "Gate Valve 40x1-1/4",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 0,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "GTVL50X112",
+    "name": "Gate Valve 50x1-1/2",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 0,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "GTVL63X2",
+    "name": "Gate Valve 63x2",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 0,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "GVA25",
+    "name": "Gate Valve ACCUFIT 25mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 530,
+    "stock": 896,
+    "in_stock": true,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "GVA32",
+    "name": "Gate Valve ACCUFIT 32mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 720,
+    "stock": 1314,
+    "in_stock": true,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "GVM25",
+    "name": "Gate Valve Master 25mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 450,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "GVM32",
+    "name": "Gate Valve Master 32mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 635,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "gw",
+    "name": "Geezer Wire",
+    "variant": "General",
+    "category": "Accessories",
+    "selling_price": 320,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "H",
+    "name": "Hook Patti",
+    "variant": "General",
+    "category": "Accessories",
+    "selling_price": 15,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "JC112",
+    "name": "Jubilee Clamp 1-1/2",
+    "variant": "Hardware",
+    "category": "Accessories",
+    "selling_price": 30,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "JC114",
+    "name": "Jubilee Clamp 1-1/4",
+    "variant": "Hardware",
+    "category": "Accessories",
+    "selling_price": 25,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "JC2",
+    "name": "Jubilee Clamp 1/2",
+    "variant": "Hardware",
+    "category": "Accessories",
+    "selling_price": 15,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "KC2",
+    "name": "Killi Clamp 1/2",
+    "variant": "Hardware",
+    "category": "Accessories",
+    "selling_price": 20,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "kc4",
+    "name": "Killi Clamp 3/4",
+    "variant": "Hardware",
+    "category": "Accessories",
+    "selling_price": 25,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "MH12M",
+    "name": "Manhole Cover 12x12",
+    "variant": "Manhole",
+    "category": "Accessories",
+    "selling_price": 860,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "MHMF9",
+    "name": "Manhole Cover 9x9",
+    "variant": "Manhole",
+    "category": "Accessories",
+    "selling_price": 650,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "MHHi12P",
+    "name": "Manhole Cover PVC 12x12",
+    "variant": "Manhole",
+    "category": "Accessories",
+    "selling_price": 320,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "MHHi6",
+    "name": "Manhole Cover PVC 6x6",
+    "variant": "Manhole",
+    "category": "Accessories",
+    "selling_price": 150,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "MHA19",
+    "name": "Manhole Cover PVC 9x9",
+    "variant": "Manhole",
+    "category": "Accessories",
+    "selling_price": 200,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "MHHi12",
+    "name": "Manhole Cover Star 12x12",
+    "variant": "Manhole",
+    "category": "Accessories",
+    "selling_price": 400,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "MHMF24",
+    "name": "Manhole Master Plus 24x24",
+    "variant": "Manhole",
+    "category": "Accessories",
+    "selling_price": 5000,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "MHA16",
+    "name": "Manhole Strainer 6x6",
+    "variant": "Manhole",
+    "category": "Accessories",
+    "selling_price": 250,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "MR",
+    "name": "Mirror",
+    "variant": "General",
+    "category": "Accessories",
+    "selling_price": 430,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "MEA",
+    "name": "Mixer Elbow PPR ACCUFIT 25x1/2",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 348,
+    "stock": 420,
+    "in_stock": true,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "MEM",
+    "name": "Mixer Elbow PPR Master 25x1/2",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 334,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "NRV",
+    "name": "Non Return Valve 1/2",
+    "variant": "Tap/Valve",
+    "category": "Accessories",
+    "selling_price": 370,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "PT3",
+    "name": "P Trap PVC 3in",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 275,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "PT4",
+    "name": "P Trap PVC 4in",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 600,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "PA1625",
+    "name": "PIPE PPR ACCUFIT 25mm PN16",
+    "variant": "PPR",
+    "category": "Pipes & Fittings",
+    "selling_price": 455,
+    "stock": 597,
+    "in_stock": true,
+    "image": "assets/products/pipes and fitting.jpeg"
+  },
+  {
+    "sku": "PA2025",
+    "name": "PIPE PPR ACCUFIT 25mm PN20",
+    "variant": "PPR",
+    "category": "Pipes & Fittings",
+    "selling_price": 520,
+    "stock": 949,
+    "in_stock": true,
+    "image": "assets/products/pipes and fitting.jpeg"
+  },
+  {
+    "sku": "PA1632",
+    "name": "PIPE PPR ACCUFIT 32mm PN16",
+    "variant": "PPR",
+    "category": "Pipes & Fittings",
+    "selling_price": 718,
+    "stock": 697,
+    "in_stock": true,
+    "image": "assets/products/pipes and fitting.jpeg"
+  },
+  {
+    "sku": "PA2032",
+    "name": "PIPE PPR ACCUFIT 32mm PN20",
+    "variant": "PPR",
+    "category": "Pipes & Fittings",
+    "selling_price": 848,
+    "stock": 1157,
+    "in_stock": true,
+    "image": "assets/products/pipes and fitting.jpeg"
+  },
+  {
+    "sku": "PM1625",
+    "name": "PIPE PPR Master 25mm PN16",
+    "variant": "PPR",
+    "category": "Pipes & Fittings",
+    "selling_price": 750,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/pipes and fitting.jpeg"
+  },
+  {
+    "sku": "PM2025",
+    "name": "PIPE PPR Master 25mm PN20",
+    "variant": "PPR",
+    "category": "Pipes & Fittings",
+    "selling_price": 840,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/pipes and fitting.jpeg"
+  },
+  {
+    "sku": "PM1632",
+    "name": "PIPE PPR Master 32mm PN16",
+    "variant": "PPR",
+    "category": "Pipes & Fittings",
+    "selling_price": 1250,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/pipes and fitting.jpeg"
+  },
+  {
+    "sku": "PM2032",
+    "name": "PIPE PPR Master 32mm PN20",
+    "variant": "PPR",
+    "category": "Pipes & Fittings",
+    "selling_price": 1400,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/pipes and fitting.jpeg"
+  },
+  {
+    "sku": "PN10",
+    "name": "Pipe Nipple 1/2 10in",
+    "variant": "GI/Brass",
+    "category": "Sanitary Fittings",
+    "selling_price": 80,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "PN12",
+    "name": "Pipe Nipple 1/2 12in",
+    "variant": "GI/Brass",
+    "category": "Sanitary Fittings",
+    "selling_price": 100,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "PN4",
+    "name": "Pipe Nipple 1/2 4in",
+    "variant": "GI/Brass",
+    "category": "Sanitary Fittings",
+    "selling_price": 40,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "PN5",
+    "name": "Pipe Nipple 1/2 5in",
+    "variant": "GI/Brass",
+    "category": "Sanitary Fittings",
+    "selling_price": 50,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "PN6",
+    "name": "Pipe Nipple 1/2 6in",
+    "variant": "GI/Brass",
+    "category": "Sanitary Fittings",
+    "selling_price": 60,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "PN8",
+    "name": "Pipe Nipple 1/2 8in",
+    "variant": "GI/Brass",
+    "category": "Sanitary Fittings",
+    "selling_price": 70,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "PN44",
+    "name": "Pipe Nipple 3/4 4in",
+    "variant": "GI/Brass",
+    "category": "Sanitary Fittings",
+    "selling_price": 70,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "PN45",
+    "name": "Pipe Nipple 3/4 5in",
+    "variant": "GI/Brass",
+    "category": "Sanitary Fittings",
+    "selling_price": 80,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "PN46",
+    "name": "Pipe Nipple 3/4 6in",
+    "variant": "GI/Brass",
+    "category": "Sanitary Fittings",
+    "selling_price": 90,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "PN47",
+    "name": "Pipe Nipple 3/4 7in",
+    "variant": "GI/Brass",
+    "category": "Sanitary Fittings",
+    "selling_price": 100,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "PN48",
+    "name": "Pipe Nipple 3/4 8in",
+    "variant": "GI/Brass",
+    "category": "Sanitary Fittings",
+    "selling_price": 110,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "PN16-25MM",
+    "name": "Pipe PN16 25mm",
+    "variant": "PPR",
+    "category": "Pipes & Fittings",
+    "selling_price": 1513,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/pipes and fitting.jpeg"
+  },
+  {
+    "sku": "PN16-32MM",
+    "name": "Pipe PN16 32mm",
+    "variant": "PPR",
+    "category": "Pipes & Fittings",
+    "selling_price": 2512,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/pipes and fitting.jpeg"
+  },
+  {
+    "sku": "PN16-40MM",
+    "name": "Pipe PN16 40mm",
+    "variant": "PPR",
+    "category": "Pipes & Fittings",
+    "selling_price": 3673,
+    "stock": 3,
+    "in_stock": true,
+    "image": "assets/products/pipes and fitting.jpeg"
+  },
+  {
+    "sku": "PN20-110MM",
+    "name": "Pipe PN20 110mm",
+    "variant": "PPR",
+    "category": "Pipes & Fittings",
+    "selling_price": 33415,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/pipes and fitting.jpeg"
+  },
+  {
+    "sku": "PN20-20MM",
+    "name": "Pipe PN20 20mm",
+    "variant": "PPR",
+    "category": "Pipes & Fittings",
+    "selling_price": 1114,
+    "stock": 1,
+    "in_stock": true,
+    "image": "assets/products/pipes and fitting.jpeg"
+  },
+  {
+    "sku": "PN20-25MM",
+    "name": "Pipe PN20 25mm",
+    "variant": "PPR",
+    "category": "Pipes & Fittings",
+    "selling_price": 1706,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/pipes and fitting.jpeg"
+  },
+  {
+    "sku": "PN20-32MM",
+    "name": "Pipe PN20 32mm",
+    "variant": "PPR",
+    "category": "Pipes & Fittings",
+    "selling_price": 2929,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/pipes and fitting.jpeg"
+  },
+  {
+    "sku": "PN20-40MM",
+    "name": "Pipe PN20 40mm",
+    "variant": "PPR",
+    "category": "Pipes & Fittings",
+    "selling_price": 4307,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/pipes and fitting.jpeg"
+  },
+  {
+    "sku": "PN20-50MM",
+    "name": "Pipe PN20 50mm",
+    "variant": "PPR",
+    "category": "Pipes & Fittings",
+    "selling_price": 7322,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/pipes and fitting.jpeg"
+  },
+  {
+    "sku": "PN20-63MM",
+    "name": "Pipe PN20 63mm",
+    "variant": "PPR",
+    "category": "Pipes & Fittings",
+    "selling_price": 11582,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/pipes and fitting.jpeg"
+  },
+  {
+    "sku": "PN20-75MM",
+    "name": "Pipe PN20 75mm",
+    "variant": "PPR",
+    "category": "Pipes & Fittings",
+    "selling_price": 18869,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/pipes and fitting.jpeg"
+  },
+  {
+    "sku": "PN20-90MM",
+    "name": "Pipe PN20 90mm",
+    "variant": "PPR",
+    "category": "Pipes & Fittings",
+    "selling_price": 26512,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/pipes and fitting.jpeg"
+  },
+  {
+    "sku": "PLA",
+    "name": "Plug ACCUFIT 1/2",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 10,
+    "stock": 20,
+    "in_stock": true,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "PLA32",
+    "name": "Plug ACCUFIT 3/4",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 15,
+    "stock": 32,
+    "in_stock": true,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "PLE3",
+    "name": "Plug Elbow PVC 3in",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 210,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "PLE4",
+    "name": "Plug Elbow PVC 4in",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 260,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "PLM25",
+    "name": "Plug Master 1/2",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 15,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "PLM32",
+    "name": "Plug Master 3/4",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 20,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "PLT3",
+    "name": "Plug Tee MFit 3in",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 180,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "PLT4",
+    "name": "Plug Tee PVC 4in",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 330,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "RP",
+    "name": "Rawal Plug",
+    "variant": "Hardware",
+    "category": "Accessories",
+    "selling_price": 1,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "SF12",
+    "name": "Screw Fastener 1.5in",
+    "variant": "Hardware",
+    "category": "Accessories",
+    "selling_price": 40,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "Sf1",
+    "name": "Screw Fastener 1in",
+    "variant": "Hardware",
+    "category": "Accessories",
+    "selling_price": 30,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "SF22",
+    "name": "Screw Fastener 2.5in",
+    "variant": "Hardware",
+    "category": "Accessories",
+    "selling_price": 100,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "SF2",
+    "name": "Screw Fastener 2in",
+    "variant": "Hardware",
+    "category": "Accessories",
+    "selling_price": 80,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "SNC",
+    "name": "Shower Neck Chrome",
+    "variant": "Tap/Valve",
+    "category": "Accessories",
+    "selling_price": 160,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "SPCYS",
+    "name": "Single Pillar Cock Tempo",
+    "variant": "Tap/Valve",
+    "category": "Accessories",
+    "selling_price": 850,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "SBSQ",
+    "name": "Sink Bowl Square",
+    "variant": "Bathroom",
+    "category": "Accessories",
+    "selling_price": 1650,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "SCSYS",
+    "name": "Sink Cock Single YS",
+    "variant": "Tap/Valve",
+    "category": "Accessories",
+    "selling_price": 800,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "SMC",
+    "name": "Sink Mixer China",
+    "variant": "Tap/Valve",
+    "category": "Accessories",
+    "selling_price": 2200,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "SMYS",
+    "name": "Sink Mixer YS",
+    "variant": "Tap/Valve",
+    "category": "Accessories",
+    "selling_price": 1450,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "SSNCH",
+    "name": "Sink Shower Neck Chrome",
+    "variant": "Tap/Valve",
+    "category": "Accessories",
+    "selling_price": 350,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "SSNC",
+    "name": "Sink Shower Neck Color",
+    "variant": "Tap/Valve",
+    "category": "Accessories",
+    "selling_price": 500,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "SW",
+    "name": "Sink Waste",
+    "variant": "Bathroom",
+    "category": "Accessories",
+    "selling_price": 200,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "SD",
+    "name": "Soap Dish Steel",
+    "variant": "Bathroom",
+    "category": "Accessories",
+    "selling_price": 150,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "SKT110MM",
+    "name": "Socket 110mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 2821,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "SKT20MM",
+    "name": "Socket 20mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 27,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "SKT25MM",
+    "name": "Socket 25mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 44,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "SKT32MM",
+    "name": "Socket 32mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 78,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "SKT40MM",
+    "name": "Socket 40mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 133,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "SKT50MM",
+    "name": "Socket 50mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 185,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "SKT63MM",
+    "name": "Socket 63mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 340,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "SKT75MM",
+    "name": "Socket 75mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 952,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "SKT90MM",
+    "name": "Socket 90mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 1618,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "PS2MF",
+    "name": "Socket MFit 2in",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 75,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "PS3MF",
+    "name": "Socket MFit 3in",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 130,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "PS32",
+    "name": "Socket MFit 3x2",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 120,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "PS4MF",
+    "name": "Socket MFit 4in",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 160,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "PS43",
+    "name": "Socket MFit 4x3",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 205,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "SA25",
+    "name": "Socket PPR ACCUFIT 25mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 20,
+    "stock": 375,
+    "in_stock": true,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "SA252",
+    "name": "Socket PPR ACCUFIT 25x1/2",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 97,
+    "stock": 51,
+    "in_stock": true,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "SA254",
+    "name": "Socket PPR ACCUFIT 25x3/4",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 129,
+    "stock": 200,
+    "in_stock": true,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "SA3225",
+    "name": "Socket PPR ACCUFIT 25x32",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 30,
+    "stock": 43,
+    "in_stock": true,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "SA32",
+    "name": "Socket PPR ACCUFIT 32mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 32,
+    "stock": 28,
+    "in_stock": true,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "SA322",
+    "name": "Socket PPR ACCUFIT 32x1/2",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 170,
+    "stock": 283,
+    "in_stock": true,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "SA321",
+    "name": "Socket PPR ACCUFIT 32x1in",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 335,
+    "stock": 453,
+    "in_stock": true,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "SA324",
+    "name": "Socket PPR ACCUFIT 32x3/4",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 222,
+    "stock": 259,
+    "in_stock": true,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "SM25",
+    "name": "Socket PPR Master 25mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 20,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "SM252",
+    "name": "Socket PPR Master 25x1/2",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 110,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "SM254",
+    "name": "Socket PPR Master 25x3/4",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 144,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "SM3225",
+    "name": "Socket PPR Master 25x32",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 25,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "SM32",
+    "name": "Socket PPR Master 32mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 33,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "SM321",
+    "name": "Socket PPR Master 32x1",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 250,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "SM324",
+    "name": "Socket PPR Master 32x3/4",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 156,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "SN12",
+    "name": "Steel Nails 1.5in per dozen",
+    "variant": "Hardware",
+    "category": "Accessories",
+    "selling_price": 60,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "SN1",
+    "name": "Steel Nails 1in per dozen",
+    "variant": "Hardware",
+    "category": "Accessories",
+    "selling_price": 40,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "SN22",
+    "name": "Steel Nails 2.5in per dozen",
+    "variant": "Hardware",
+    "category": "Accessories",
+    "selling_price": 120,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "SN2",
+    "name": "Steel Nails 2in per dozen",
+    "variant": "Hardware",
+    "category": "Accessories",
+    "selling_price": 80,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "SN3",
+    "name": "Steel Nails 3in per dozen",
+    "variant": "Hardware",
+    "category": "Accessories",
+    "selling_price": 140,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "SN4",
+    "name": "Steel Nails 4in per piece",
+    "variant": "Hardware",
+    "category": "Accessories",
+    "selling_price": 15,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "SN5",
+    "name": "Steel Nails 5in per piece",
+    "variant": "Hardware",
+    "category": "Accessories",
+    "selling_price": 20,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "SN6",
+    "name": "Steel Nails 6in per piece",
+    "variant": "Hardware",
+    "category": "Accessories",
+    "selling_price": 30,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "TCC",
+    "name": "Tee Cock China 1/2",
+    "variant": "Tap/Valve",
+    "category": "Sanitary Fittings",
+    "selling_price": 350,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "TA25",
+    "name": "Tee PPR ACCUFIT 25mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 28,
+    "stock": 95,
+    "in_stock": true,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "TA252",
+    "name": "Tee PPR ACCUFIT 25x1/2",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 126,
+    "stock": 84,
+    "in_stock": true,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "TA2532",
+    "name": "Tee PPR ACCUFIT 25x32",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 60,
+    "stock": 93,
+    "in_stock": true,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "TA32",
+    "name": "Tee PPR ACCUFIT 32mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 57,
+    "stock": 52,
+    "in_stock": true,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "TA322",
+    "name": "Tee PPR ACCUFIT 32x1/2",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 192,
+    "stock": 395,
+    "in_stock": true,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "TA324",
+    "name": "Tee PPR ACCUFIT 32x3/4",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 222,
+    "stock": 253,
+    "in_stock": true,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "TM25",
+    "name": "Tee PPR Master 25mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 37,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "TM252",
+    "name": "Tee PPR Master 25x1/2",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 135,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "TM2532",
+    "name": "Tee PPR Master 25x32",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 55,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "TM32",
+    "name": "Tee PPR Master 32mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 60,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "TM322",
+    "name": "Tee PPR Master 32x1/2",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 200,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "TM324",
+    "name": "Tee PPR Master 32x3/4",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 210,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "T3",
+    "name": "Tee PVC Equal 3in",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 165,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "T4",
+    "name": "Tee PVC Equal 4in",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 490,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "TT",
+    "name": "Teflon Tape",
+    "variant": "General",
+    "category": "Accessories",
+    "selling_price": 30,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "TH",
+    "name": "Tissue Holder Steel",
+    "variant": "Bathroom",
+    "category": "Accessories",
+    "selling_price": 250,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "TSH",
+    "name": "Toilet Shower Handle",
+    "variant": "Tap/Valve",
+    "category": "Accessories",
+    "selling_price": 200,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "UC25",
+    "name": "U Clamp 25mm",
+    "variant": "Hardware",
+    "category": "Accessories",
+    "selling_price": 6,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "UC2",
+    "name": "U Clamp 2in",
+    "variant": "Hardware",
+    "category": "Accessories",
+    "selling_price": 10,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "UC32",
+    "name": "U Clamp 32mm",
+    "variant": "Hardware",
+    "category": "Accessories",
+    "selling_price": 8,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "UC3",
+    "name": "U Clamp 3in",
+    "variant": "Hardware",
+    "category": "Accessories",
+    "selling_price": 15,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "UC4",
+    "name": "U Clamp 4in",
+    "variant": "Hardware",
+    "category": "Accessories",
+    "selling_price": 20,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "PBC2",
+    "name": "UPVC Pipe B-Class 2in",
+    "variant": "UPVC",
+    "category": "Pipes & Fittings",
+    "selling_price": 750,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/pipes and fitting.jpeg"
+  },
+  {
+    "sku": "PBC3",
+    "name": "UPVC Pipe B-Class 3in",
+    "variant": "UPVC",
+    "category": "Pipes & Fittings",
+    "selling_price": 2000,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/pipes and fitting.jpeg"
+  },
+  {
+    "sku": "PBC4",
+    "name": "UPVC Pipe B-Class 4in",
+    "variant": "UPVC",
+    "category": "Pipes & Fittings",
+    "selling_price": 2700,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/pipes and fitting.jpeg"
+  },
+  {
+    "sku": "PD2",
+    "name": "UPVC Pipe Deluxe 2in",
+    "variant": "UPVC",
+    "category": "Pipes & Fittings",
+    "selling_price": 750,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/pipes and fitting.jpeg"
+  },
+  {
+    "sku": "PD3",
+    "name": "UPVC Pipe Deluxe 3in",
+    "variant": "UPVC",
+    "category": "Pipes & Fittings",
+    "selling_price": 1500,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/pipes and fitting.jpeg"
+  },
+  {
+    "sku": "PD4",
+    "name": "UPVC Pipe Deluxe 4in",
+    "variant": "UPVC",
+    "category": "Pipes & Fittings",
+    "selling_price": 2000,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/pipes and fitting.jpeg"
+  },
+  {
+    "sku": "PS2U",
+    "name": "UPVC Pipe Sewerage 2in",
+    "variant": "UPVC",
+    "category": "Pipes & Fittings",
+    "selling_price": 550,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/pipes and fitting.jpeg"
+  },
+  {
+    "sku": "PS3U",
+    "name": "UPVC Pipe Sewerage 3in",
+    "variant": "UPVC",
+    "category": "Pipes & Fittings",
+    "selling_price": 800,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/pipes and fitting.jpeg"
+  },
+  {
+    "sku": "PPS4",
+    "name": "UPVC Pipe Sewerage 4in",
+    "variant": "UPVC",
+    "category": "Pipes & Fittings",
+    "selling_price": 1000,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/pipes and fitting.jpeg"
+  },
+  {
+    "sku": "UA25",
+    "name": "Union ACCUFIT 25mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 95,
+    "stock": 139,
+    "in_stock": true,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "UA32",
+    "name": "Union ACCUFIT 32mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 145,
+    "stock": 204,
+    "in_stock": true,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "UM25",
+    "name": "Union Master 25mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 65,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "UM32",
+    "name": "Union Master 32mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 95,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "UVA25",
+    "name": "Union Valve ACCUFIT 25mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 782,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "UVA32",
+    "name": "Union Valve ACCUFIT 32mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 1110,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "UVM25",
+    "name": "Union Valve Master 25mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 450,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "UVM32",
+    "name": "Union Valve Master 32mm",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 550,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "VMC",
+    "name": "Vanity Mixer China",
+    "variant": "Tap/Valve",
+    "category": "Accessories",
+    "selling_price": 2000,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "WC",
+    "name": "WC Thai Medium",
+    "variant": "Ceramic",
+    "category": "Ceramics",
+    "selling_price": 1360,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/toilets.jpeg"
+  },
+  {
+    "sku": "WB",
+    "name": "Wash Basin Styilo",
+    "variant": "Ceramic",
+    "category": "Ceramics",
+    "selling_price": 3200,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/toilets.jpeg"
+  },
+  {
+    "sku": "WP",
+    "name": "Waste Pipe",
+    "variant": "General",
+    "category": "Accessories",
+    "selling_price": 80,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/basin mixer.jpeg"
+  },
+  {
+    "sku": "WN2",
+    "name": "Water Nozzle 1/2",
+    "variant": "Tap/Valve",
+    "category": "Sanitary Fittings",
+    "selling_price": 30,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "WN1",
+    "name": "Water Nozzle 1in",
+    "variant": "Tap/Valve",
+    "category": "Sanitary Fittings",
+    "selling_price": 50,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "WN4",
+    "name": "Water Nozzle 3/4",
+    "variant": "Tap/Valve",
+    "category": "Sanitary Fittings",
+    "selling_price": 40,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "WTLOFT-250",
+    "name": "Water Tank Accufit Loft 250L",
+    "variant": "Loft",
+    "category": "Water Tanks",
+    "selling_price": 24500,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/hdpe pipes.jpeg"
+  },
+  {
+    "sku": "WTLOFT-325",
+    "name": "Water Tank Accufit Loft 325L",
+    "variant": "Loft",
+    "category": "Water Tanks",
+    "selling_price": 28900,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/hdpe pipes.jpeg"
+  },
+  {
+    "sku": "WTLOFT-425",
+    "name": "Water Tank Accufit Loft 425L",
+    "variant": "Loft",
+    "category": "Water Tanks",
+    "selling_price": 33400,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/hdpe pipes.jpeg"
+  },
+  {
+    "sku": "WTLOFT-525",
+    "name": "Water Tank Accufit Loft 525L",
+    "variant": "Loft",
+    "category": "Water Tanks",
+    "selling_price": 40100,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/hdpe pipes.jpeg"
+  },
+  {
+    "sku": "WTLOFT-625",
+    "name": "Water Tank Accufit Loft 625L",
+    "variant": "Loft",
+    "category": "Water Tanks",
+    "selling_price": 46800,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/hdpe pipes.jpeg"
+  },
+  {
+    "sku": "WTLOFT-750",
+    "name": "Water Tank Accufit Loft 750L",
+    "variant": "Loft",
+    "category": "Water Tanks",
+    "selling_price": 51200,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/hdpe pipes.jpeg"
+  },
+  {
+    "sku": "WTAR-1000",
+    "name": "Water Tank Atlas Red 1000L",
+    "variant": "Atlas Red",
+    "category": "Water Tanks",
+    "selling_price": 16051,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/hdpe pipes.jpeg"
+  },
+  {
+    "sku": "WTAR-1200",
+    "name": "Water Tank Atlas Red 1200L",
+    "variant": "Atlas Red",
+    "category": "Water Tanks",
+    "selling_price": 18870,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/hdpe pipes.jpeg"
+  },
+  {
+    "sku": "WTAR-1500",
+    "name": "Water Tank Atlas Red 1500L",
+    "variant": "Atlas Red",
+    "category": "Water Tanks",
+    "selling_price": 23129,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/hdpe pipes.jpeg"
+  },
+  {
+    "sku": "WTAR-2000",
+    "name": "Water Tank Atlas Red 2000L",
+    "variant": "Atlas Red",
+    "category": "Water Tanks",
+    "selling_price": 30185,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/hdpe pipes.jpeg"
+  },
+  {
+    "sku": "WTAR-300",
+    "name": "Water Tank Atlas Red 300L",
+    "variant": "Atlas Red",
+    "category": "Water Tanks",
+    "selling_price": 6866,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/hdpe pipes.jpeg"
+  },
+  {
+    "sku": "WTAR-400",
+    "name": "Water Tank Atlas Red 400L",
+    "variant": "Atlas Red",
+    "category": "Water Tanks",
+    "selling_price": 7325,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/hdpe pipes.jpeg"
+  },
+  {
+    "sku": "WTAR-600",
+    "name": "Water Tank Atlas Red 600L",
+    "variant": "Atlas Red",
+    "category": "Water Tanks",
+    "selling_price": 9154,
+    "stock": 2,
+    "in_stock": true,
+    "image": "assets/products/hdpe pipes.jpeg"
+  },
+  {
+    "sku": "WTAR-750",
+    "name": "Water Tank Atlas Red 750L",
+    "variant": "Atlas Red",
+    "category": "Water Tanks",
+    "selling_price": 12818,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/hdpe pipes.jpeg"
+  },
+  {
+    "sku": "WTAB-1000",
+    "name": "Water Tank Blue Supreme 1000L",
+    "variant": "Blue Supreme",
+    "category": "Water Tanks",
+    "selling_price": 17868,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/hdpe pipes.jpeg"
+  },
+  {
+    "sku": "WTAB-1200",
+    "name": "Water Tank Blue Supreme 1200L",
+    "variant": "Blue Supreme",
+    "category": "Water Tanks",
+    "selling_price": 23216,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/hdpe pipes.jpeg"
+  },
+  {
+    "sku": "WTAB-1500",
+    "name": "Water Tank Blue Supreme 1500L",
+    "variant": "Blue Supreme",
+    "category": "Water Tanks",
+    "selling_price": 27675,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/hdpe pipes.jpeg"
+  },
+  {
+    "sku": "WTAB-2000",
+    "name": "Water Tank Blue Supreme 2000L",
+    "variant": "Blue Supreme",
+    "category": "Water Tanks",
+    "selling_price": 33030,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/hdpe pipes.jpeg"
+  },
+  {
+    "sku": "WTAB-300",
+    "name": "Water Tank Blue Supreme 300L",
+    "variant": "Blue Supreme",
+    "category": "Water Tanks",
+    "selling_price": 8040,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/hdpe pipes.jpeg"
+  },
+  {
+    "sku": "WTAB-400",
+    "name": "Water Tank Blue Supreme 400L",
+    "variant": "Blue Supreme",
+    "category": "Water Tanks",
+    "selling_price": 8930,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/hdpe pipes.jpeg"
+  },
+  {
+    "sku": "WTAB-600",
+    "name": "Water Tank Blue Supreme 600L",
+    "variant": "Blue Supreme",
+    "category": "Water Tanks",
+    "selling_price": 10720,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/hdpe pipes.jpeg"
+  },
+  {
+    "sku": "WTAB-750",
+    "name": "Water Tank Blue Supreme 750L",
+    "variant": "Blue Supreme",
+    "category": "Water Tanks",
+    "selling_price": 14295,
+    "stock": 3,
+    "in_stock": true,
+    "image": "assets/products/hdpe pipes.jpeg"
+  },
+  {
+    "sku": "WTAG-1000",
+    "name": "Water Tank Green Medium 1000L",
+    "variant": "Green Medium",
+    "category": "Water Tanks",
+    "selling_price": 35590,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/hdpe pipes.jpeg"
+  },
+  {
+    "sku": "WTAG-1200",
+    "name": "Water Tank Green Medium 1200L",
+    "variant": "Green Medium",
+    "category": "Water Tanks",
+    "selling_price": 41872,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/hdpe pipes.jpeg"
+  },
+  {
+    "sku": "WTAG-1500",
+    "name": "Water Tank Green Medium 1500L",
+    "variant": "Green Medium",
+    "category": "Water Tanks",
+    "selling_price": 51299,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/hdpe pipes.jpeg"
+  },
+  {
+    "sku": "WTAG-2000",
+    "name": "Water Tank Green Medium 2000L",
+    "variant": "Green Medium",
+    "category": "Water Tanks",
+    "selling_price": 67049,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/hdpe pipes.jpeg"
+  },
+  {
+    "sku": "WTAG-300",
+    "name": "Water Tank Green Medium 300L",
+    "variant": "Green Medium",
+    "category": "Water Tanks",
+    "selling_price": 15240,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/hdpe pipes.jpeg"
+  },
+  {
+    "sku": "WTAG-400",
+    "name": "Water Tank Green Medium 400L",
+    "variant": "Green Medium",
+    "category": "Water Tanks",
+    "selling_price": 16245,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/hdpe pipes.jpeg"
+  },
+  {
+    "sku": "WTAG-600",
+    "name": "Water Tank Green Medium 600L",
+    "variant": "Green Medium",
+    "category": "Water Tanks",
+    "selling_price": 20321,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/hdpe pipes.jpeg"
+  },
+  {
+    "sku": "WTAG-750",
+    "name": "Water Tank Green Medium 750L",
+    "variant": "Green Medium",
+    "category": "Water Tanks",
+    "selling_price": 28433,
+    "stock": 2,
+    "in_stock": true,
+    "image": "assets/products/hdpe pipes.jpeg"
+  },
+  {
+    "sku": "YT3",
+    "name": "Y Tee PVC 3in",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 215,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  },
+  {
+    "sku": "YT4",
+    "name": "Y Tee PVC 4in",
+    "variant": "PPR",
+    "category": "Sanitary Fittings",
+    "selling_price": 490,
+    "stock": 0,
+    "in_stock": false,
+    "image": "assets/products/Pipe Fittings.jpg"
+  }
+]
