@@ -8,14 +8,13 @@
   <meta property="og:title" content="Products — ZSE Store" />
   <meta property="og:description" content="Quality sanitary and plumbing supplies in Haripur, KPK." />
   <meta property="og:type" content="website" />
-  <!-- Security -->
   <meta http-equiv="X-Content-Type-Options" content="nosniff" />
   <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
   <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
   <title>Products — ZSE Store</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
   <style>
-    /* ── Products-page-only styles ─────────────────────────── */
     .products-search-bar {
       background: var(--bg2);
       padding: 16px 24px;
@@ -23,93 +22,35 @@
       display: flex;
       justify-content: center;
     }
-    .products-search-bar .search-bar {
-      max-width: 500px;
-      width: 100%;
-    }
-    .products-search-bar .search-bar input { width: 100%; }
-
-    .product-img-wrap {
-      position: relative;
-      overflow: hidden;
-    }
-    .product-img-wrap img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-bottom: 1px solid var(--border);
-      display: block;
-      transition: transform 0.4s ease;
-    }
-    .product-card:hover .product-img-wrap img { transform: scale(1.05); }
-
-    .product-stock {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      font-size: 0.7rem;
-      font-weight: 700;
-      padding: 4px 10px;
-      border-radius: 20px;
-    }
-    .product-stock.in-stock  { background: rgba(76,175,80,0.9);  color: #fff; }
-    .product-stock.out-stock { background: rgba(255,152,0,0.9);  color: #fff; }
-
-    .product-info { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 4px; flex: 1; }
-    .product-name { font-size: 0.9rem; font-weight: 700; color: var(--text); line-height: 1.3; min-height: 2.6em; }
-
-    /* Skeleton loader */
-    .skeleton-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-      gap: 20px;
-    }
-    .skeleton-card {
-      background: var(--bg3);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-      animation: shimmer 1.4s infinite;
-    }
-    .skeleton-img  { height: 200px; background: var(--bg4); }
-    .skeleton-body { padding: 14px 16px; display: flex; flex-direction: column; gap: 10px; }
-    .skeleton-line { height: 12px; background: var(--bg4); border-radius: 4px; }
-    .skeleton-line.short { width: 55%; }
-    .skeleton-line.price { width: 40%; height: 16px; }
-    .skeleton-btn  { height: 38px; background: var(--bg4); border-radius: var(--radius-md); margin-top: 8px; }
-    @keyframes shimmer {
-      0%   { opacity: 1; }
-      50%  { opacity: 0.5; }
-      100% { opacity: 1; }
-    }
-
-    /* Empty state */
-    .empty-state {
-      grid-column: 1 / -1;
-      text-align: center;
-      padding: 80px 20px;
-      color: var(--text-muted);
-    }
-    .empty-icon { font-size: 3.5rem; margin-bottom: 16px; }
-    .empty-state h3 { color: var(--text); font-size: 1.3rem; margin-bottom: 8px; }
-    .empty-state p { font-size: 0.95rem; }
-
-    /* Sort bar */
-    .products-toolbar {
+    .products-search-bar .inner {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      flex-wrap: wrap;
-      max-width: 1200px;
-      margin: 24px auto 0;
-      padding: 0 24px;
+      gap: 8px;
+      width: 100%;
+      max-width: 540px;
     }
-
-    @media (max-width: 768px) {
-      .product-img-wrap img { height: 160px; }
-      .products-toolbar { margin-top: 16px; padding: 0 16px; }
-      .products-grid-wrap { padding: 0 16px; margin-top: 16px; }
+    .products-search-bar input {
+      flex: 1;
+      padding: 11px 16px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-lit);
+      background: var(--bg3);
+      color: var(--text);
+      font-size: 0.95rem;
+      font-family: inherit;
+      transition: border-color var(--transition), box-shadow var(--transition);
+    }
+    .products-search-bar input:focus {
+      outline: none;
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px var(--gold-dim);
+    }
+    .products-search-bar input::placeholder { color: var(--text-dim); }
+    .products-search-bar .btn-search {
+      padding: 11px 20px;
+      white-space: nowrap;
+    }
+    @media (max-width: 480px) {
+      .products-search-bar { padding: 12px 16px; }
     }
   </style>
 </head>
@@ -124,10 +65,11 @@
         </a>
       </div>
 
+      <!-- Header search (desktop only, redirects back to this page with query) -->
       <div class="search-bar" role="search">
-        <input type="search" id="searchkey" placeholder="Search products, SKUs…"
+        <input type="search" id="headerSearch" placeholder="Search products, SKUs…"
           autocomplete="off" aria-label="Search products" />
-        <button class="btn-search" aria-label="Search">Search</button>
+        <button class="btn-search" id="headerSearchBtn" aria-label="Search">Search</button>
       </div>
 
       <nav class="nav-categories" aria-label="Main navigation">
@@ -135,11 +77,14 @@
         <div class="dropdown">
           <a href="products.html" class="dropbtn active" aria-current="page">Products ▾</a>
           <ul class="dropdown-menu" role="menu">
-            <li role="menuitem"><a href="products.html?category=Accessories">Accessories</a></li>
-            <li role="menuitem"><a href="products.html?category=Sanitary+Fittings">Sanitary Fittings</a></li>
-            <li role="menuitem"><a href="products.html?category=Pipes+%26+Fittings">Pipes &amp; Fittings</a></li>
-            <li role="menuitem"><a href="products.html?category=Water+Tanks">Water Tanks</a></li>
-            <li role="menuitem"><a href="products.html?category=Ceramics">Ceramics</a></li>
+            <li role="menuitem"><a href="products.html?category=Accessories">🛁 Accessories</a></li>
+            <li role="menuitem"><a href="products.html?category=Sanitary+Fittings">🔧 Sanitary Fittings</a></li>
+            <li role="menuitem"><a href="products.html?category=Pipes+%26+Fittings">🪠 Pipes &amp; Fittings</a></li>
+            <li role="menuitem"><a href="products.html?category=Water+Tanks">💧 Water Tanks</a></li>
+            <li role="menuitem"><a href="products.html?category=Ceramics">🚽 Ceramics</a></li>
+            <li role="menuitem" style="border-top:1px solid #222;margin-top:4px;padding-top:4px">
+              <a href="products.html" style="color:var(--gold)">📦 All Products (310)</a>
+            </li>
           </ul>
         </div>
         <a href="contact.html">Contact</a>
@@ -166,8 +111,11 @@
     <a href="products.html?category=Pipes+%26+Fittings">🪠 Pipes &amp; Fittings</a>
     <a href="products.html?category=Water+Tanks">💧 Water Tanks</a>
     <a href="products.html?category=Ceramics">🚽 Ceramics</a>
-    <a href="products.html">📦 All Products</a>
+    <a href="products.html">📦 All Products (310)</a>
+    <div class="mobile-category-heading">More</div>
     <a href="contact.html">📞 Contact Us</a>
+    <a href="https://wa.me/923185929927" target="_blank" rel="noopener noreferrer"
+      style="color:#25D366;font-weight:700">💬 WhatsApp Us</a>
     <a href="tel:+923185929927" style="color:var(--gold);font-weight:700">📲 +92-318-5929927</a>
   </nav>
 
@@ -176,23 +124,23 @@
     <!-- ── PAGE HERO ──────────────────────────────────────── -->
     <section class="page-hero">
       <h1>Our Products</h1>
-      <p>310 sanitary &amp; plumbing products — browse by category, search by name, then WhatsApp us to order</p>
+      <p>310 sanitary &amp; plumbing products — search, filter by category, then WhatsApp us to order</p>
     </section>
 
-    <!-- ── SEARCH (products page) ─────────────────────────── -->
+    <!-- ── MAIN SEARCH BAR ───────────────────────────────── -->
     <div class="products-search-bar">
-      <div class="search-bar" role="search">
-        <input type="search" id="searchkey" placeholder="Search by name, SKU, or type…"
+      <div class="inner" role="search">
+        <input type="search" id="searchkey" placeholder="Search by name, SKU, category…"
           autocomplete="off" aria-label="Search products" />
         <button class="btn-search" aria-label="Search">🔍 Search</button>
       </div>
     </div>
 
     <!-- ── FILTER BAR ─────────────────────────────────────── -->
-    <div class="filter-section" role="navigation" aria-label="Product filters">
+    <div class="filter-section" role="navigation" aria-label="Product category filters">
       <div class="filter-wrap">
-        <span class="filter-label">Filter:</span>
-        <button class="filter-btn active" data-filter="all">All (310)</button>
+        <span class="filter-label">Filter by:</span>
+        <button class="filter-btn active" data-filter="all">All</button>
         <button class="filter-btn" data-filter="Sanitary Fittings">Sanitary Fittings</button>
         <button class="filter-btn" data-filter="Accessories">Accessories</button>
         <button class="filter-btn" data-filter="Pipes &amp; Fittings">Pipes &amp; Fittings</button>
@@ -201,9 +149,9 @@
       </div>
     </div>
 
-    <!-- ── TOOLBAR (count + sort) ─────────────────────────── -->
+    <!-- ── TOOLBAR: count + sort ─────────────────────────── -->
     <div class="products-toolbar">
-      <span class="product-count" id="productCount" aria-live="polite">Loading…</span>
+      <span class="product-count" id="productCount" aria-live="polite" aria-atomic="true">Loading…</span>
       <select id="sortSelect" class="sort-select" aria-label="Sort products">
         <option value="default">Sort: Default</option>
         <option value="name-asc">Name A–Z</option>
@@ -215,20 +163,16 @@
 
     <!-- ── PRODUCTS GRID ──────────────────────────────────── -->
     <div class="products-grid-wrap">
-      <!-- Skeleton loader shown while JS loads -->
-      <div class="products-container" id="productsContainer">
-        <div class="skeleton-grid" id="skeletonGrid" style="display:contents">
-          ${Array(12).fill(0).map(() => `
-          <div class="skeleton-card">
-            <div class="skeleton-img"></div>
-            <div class="skeleton-body">
-              <div class="skeleton-line"></div>
-              <div class="skeleton-line short"></div>
-              <div class="skeleton-line price"></div>
-              <div class="skeleton-btn"></div>
-            </div>
-          </div>`).join('')}
-        </div>
+      <div class="products-container" id="productsContainer" aria-live="polite">
+        <!-- Skeleton cards — replaced by JS on load -->
+        <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-body"><div class="skeleton-line"></div><div class="skeleton-line short"></div><div class="skeleton-line price"></div><div class="skeleton-btn"></div></div></div>
+        <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-body"><div class="skeleton-line"></div><div class="skeleton-line short"></div><div class="skeleton-line price"></div><div class="skeleton-btn"></div></div></div>
+        <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-body"><div class="skeleton-line"></div><div class="skeleton-line short"></div><div class="skeleton-line price"></div><div class="skeleton-btn"></div></div></div>
+        <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-body"><div class="skeleton-line"></div><div class="skeleton-line short"></div><div class="skeleton-line price"></div><div class="skeleton-btn"></div></div></div>
+        <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-body"><div class="skeleton-line"></div><div class="skeleton-line short"></div><div class="skeleton-line price"></div><div class="skeleton-btn"></div></div></div>
+        <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-body"><div class="skeleton-line"></div><div class="skeleton-line short"></div><div class="skeleton-line price"></div><div class="skeleton-btn"></div></div></div>
+        <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-body"><div class="skeleton-line"></div><div class="skeleton-line short"></div><div class="skeleton-line price"></div><div class="skeleton-btn"></div></div></div>
+        <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-body"><div class="skeleton-line"></div><div class="skeleton-line short"></div><div class="skeleton-line price"></div><div class="skeleton-btn"></div></div></div>
       </div>
     </div>
 
@@ -243,7 +187,7 @@
           <h2 id="modalTitle">Request a Quote</h2>
           <div class="modal-product-name" id="modalProductName"></div>
         </div>
-        <button class="close" onclick="closeQuoteModal()" aria-label="Close">&times;</button>
+        <button class="close" onclick="closeQuoteModal()" aria-label="Close modal">&times;</button>
       </div>
       <form id="quoteForm" novalidate>
         <input type="hidden" id="modalProductSKU" />
@@ -253,10 +197,10 @@
         <input type="tel" id="customerContact" placeholder="WhatsApp / Phone Number *"
           autocomplete="tel" required aria-required="true" />
         <input type="number" id="quantity" placeholder="Quantity *"
-          min="1" required aria-required="true" />
-        <textarea id="additionalInfo" placeholder="Any notes (optional)" rows="3"></textarea>
-        <button type="submit">📲 Send via WhatsApp</button>
-        <p class="modal-hint">Opens WhatsApp with your enquiry pre-filled. We respond within business hours.</p>
+          min="1" value="1" required aria-required="true" />
+        <textarea id="additionalInfo" placeholder="Any notes (size, colour, delivery area…)" rows="3"></textarea>
+        <button type="submit">📲 Send Enquiry via WhatsApp</button>
+        <p class="modal-hint">Opens WhatsApp with your request pre-filled. We reply within business hours (Mon–Sat 9am–8pm).</p>
       </form>
     </div>
   </div>
@@ -277,9 +221,10 @@
         <a href="index.html">Home</a>
         <a href="products.html" aria-current="page">Products</a>
         <a href="contact.html">Contact</a>
+        <a href="https://wa.me/923185929927" target="_blank" rel="noopener noreferrer">WhatsApp</a>
         <a href="tel:+923185929927">+92-318-5929927</a>
       </nav>
-      <p>Qureshi Chowk, Sector #1, Main Road, Khalabat Township, Haripur, KPK</p>
+      <p>Qureshi Chowk, Sector #1, Main Road, Khalabat Township, Haripur, KPK, Pakistan</p>
       <p>&copy; <span id="yr"></span> ZSE — Zain Sanitary &amp; Electric Store. All Rights Reserved.</p>
     </div>
   </footer>
@@ -287,5 +232,25 @@
   <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
   <script src="js/home.js" defer></script>
   <script src="js/products.js" defer></script>
+
+  <!-- Header search on products page routes to main search bar -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const hs = document.getElementById('headerSearch');
+      const hb = document.getElementById('headerSearchBtn');
+      const ms = document.getElementById('searchkey');
+      function syncSearch() {
+        if (ms && hs.value.trim()) {
+          ms.value = hs.value.trim();
+          ms.dispatchEvent(new Event('input'));
+          // trigger the products.js search
+          const event = new KeyboardEvent('keydown', { key: 'Enter', bubbles: true });
+          ms.dispatchEvent(event);
+        }
+      }
+      if (hb) hb.addEventListener('click', syncSearch);
+      if (hs) hs.addEventListener('keydown', e => { if (e.key === 'Enter') syncSearch(); });
+    });
+  </script>
 </body>
 </html>

@@ -1,200 +1,552 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>ZSE - Home</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
-    <style>
-      /* Dropdown styles */
-      .nav-categories {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-      .nav-categories > a {
-        color: #fff;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 16px;
-        padding: 10px 15px;
-        position: relative;
-      }
-      .dropdown {
-        position: relative;
-      }
-      .dropbtn {
-        cursor: pointer;
-        color: #fff;
-        font-weight: 600;
-        font-size: 16px;
-        padding: 10px 15px;
-        text-decoration: none;
-        display: inline-block;
-      }
-      .dropdown-menu {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: #000;
-        min-width: 180px;
-        border-radius: 6px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-        z-index: 1000;
-        padding: 10px 0;
-      }
-      .dropdown-menu li {
-        list-style: none;
-      }
-      .dropdown-menu li a {
-        display: block;
-        padding: 10px 20px;
-        color: #fff;
-        text-decoration: none;
-        font-weight: 500;
-        transition: background-color 0.3s ease;
-      }
-      .dropdown-menu li a:hover {
-        background-color: #ffd700;
-        color: #121212;
-      }
-      .dropdown:hover .dropdown-menu {
-        display: block;
-      }
-      /* Responsive adjustments */
-      @media (max-width: 768px) {
-        .nav-categories {
-          flex-direction: column;
-          gap: 10px;
-        }
-        .dropdown-menu {
-          position: static;
-          box-shadow: none;
-          background-color: transparent;
-          padding: 0;
-        }
-        .dropdown-menu li a {
-          padding: 8px 0;
-          color: #ffd700;
-        }
-        .dropdown:hover .dropdown-menu {
-          display: block;
-        }
-      }
-    </style>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ZSE Store — Haripur's trusted sanitary and plumbing supply store. PPR fittings, pipes, water tanks, taps, ceramics and more. Call or WhatsApp to order." />
+  <meta name="keywords" content="sanitary store haripur, PPR pipes haripur, plumbing supplies KPK, water tanks haripur, ZSE store" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="ZSE Store — Sanitary & Plumbing Supplies, Haripur KPK" />
+  <meta property="og:description" content="310+ sanitary and plumbing products. Quality brands, fair prices. Call or WhatsApp to order." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://zsestore.netlify.app" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <title>ZSE Store — Sanitary &amp; Plumbing Supplies, Haripur KPK</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ── Homepage-only styles ─────────────────────────────── */
+
+    /* Slider dots on hero */
+    .slider-dots {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 8px;
+      z-index: 4;
+    }
+    .slider-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.35);
+      border: none;
+      cursor: pointer;
+      transition: background 0.25s, transform 0.25s;
+      padding: 0;
+    }
+    .slider-dot.active { background: var(--gold); transform: scale(1.3); }
+
+    /* Promo banner */
+    .promo-banner {
+      background: var(--gold);
+      color: #121212;
+      text-align: center;
+      padding: 10px 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+    .promo-banner a { color: #121212; text-decoration: underline; }
+
+    /* Department section */
+    .shop-by-department {
+      background: var(--bg2);
+      padding: 56px 24px 64px;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .department-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .department-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      text-decoration: none;
+      transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+      padding-bottom: 16px;
+      cursor: pointer;
+    }
+    .department-item:hover {
+      transform: translateY(-6px);
+      border-color: var(--gold);
+      box-shadow: var(--shadow-gold);
+    }
+    .department-item img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-bottom: 1px solid var(--border);
+      display: block;
+      transition: transform 0.4s ease;
+    }
+    .department-item:hover img { transform: scale(1.06); }
+    .department-item span {
+      display: block;
+      margin-top: 14px;
+      font-weight: 600;
+      color: var(--text);
+      font-size: 0.9rem;
+      text-align: center;
+      padding: 0 10px;
+      transition: color var(--transition);
+    }
+    .department-item:hover span { color: var(--gold); }
+
+    /* Featured products section */
+    .featured-section {
+      background: var(--bg);
+      padding: 64px 24px;
+      border-bottom: 1px solid var(--border);
+    }
+    .featured-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    /* featured product cards reuse .product-card from style.css */
+    .featured-section .product-card { cursor: pointer; }
+    .featured-section .product-card:hover { border-color: var(--gold); box-shadow: var(--shadow-gold); transform: translateY(-5px); }
+
+    /* Brands section */
+    .brands-section {
+      background: var(--bg2);
+      padding: 56px 24px;
+      border-bottom: 1px solid var(--border);
+    }
+    .brands-grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .brand-pill {
+      background: var(--bg3);
+      border: 1px solid var(--border-lit);
+      border-radius: var(--radius-xl);
+      padding: 10px 24px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      transition: border-color var(--transition), color var(--transition), background var(--transition);
+      white-space: nowrap;
+    }
+    .brand-pill:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+      background: var(--gold-dim);
+    }
+
+    /* Why ZSE section */
+    .why-section {
+      background: var(--bg);
+      padding: 64px 24px;
+      border-bottom: 1px solid var(--border);
+    }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .why-card {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px 24px;
+      text-align: center;
+      transition: border-color var(--transition), box-shadow var(--transition);
+    }
+    .why-card:hover { border-color: var(--gold); box-shadow: var(--shadow-gold); }
+    .why-icon { font-size: 2.2rem; margin-bottom: 14px; }
+    .why-card h3 { font-size: 1rem; font-weight: 700; color: var(--text); margin-bottom: 8px; }
+    .why-card p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; }
+
+    /* Contact CTA section */
+    .cta-section {
+      background: linear-gradient(135deg, #0a0a0a 0%, #1a1400 100%);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 64px 24px;
+      text-align: center;
+    }
+    .cta-section h2 { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 800; color: var(--text); margin-bottom: 12px; }
+    .cta-section p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 32px; }
+    .cta-buttons { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+    .btn-cta-wa {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: var(--wa-green); color: #fff;
+      padding: 14px 28px; border-radius: var(--radius-md);
+      font-weight: 700; font-size: 0.95rem;
+      text-decoration: none;
+      transition: background var(--transition), transform var(--transition);
+    }
+    .btn-cta-wa:hover { background: #1ebe57; transform: translateY(-2px); }
+    .btn-cta-outline {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: transparent; color: var(--gold);
+      border: 2px solid var(--gold);
+      padding: 13px 28px; border-radius: var(--radius-md);
+      font-weight: 700; font-size: 0.95rem;
+      text-decoration: none;
+      transition: background var(--transition), color var(--transition), transform var(--transition);
+    }
+    .btn-cta-outline:hover { background: var(--gold); color: #121212; transform: translateY(-2px); }
+
+    /* Store info strip */
+    .store-strip {
+      background: #000;
+      border-top: 1px solid var(--border);
+      padding: 24px;
+    }
+    .store-strip-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .strip-item { display: flex; align-items: center; gap: 12px; }
+    .strip-icon { font-size: 1.5rem; }
+    .strip-text { font-size: 0.8rem; color: var(--text-muted); line-height: 1.5; }
+    .strip-text strong { color: var(--text); display: block; font-size: 0.875rem; }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .department-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+      .featured-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+      .why-grid { grid-template-columns: 1fr 1fr; gap: 14px; }
+      .store-strip-inner { justify-content: center; }
+      .cta-buttons { flex-direction: column; align-items: center; }
+    }
+    @media (max-width: 480px) {
+      .department-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+      .why-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
 <body>
 
-  <!-- Top Header Bar -->
-  <div class="top-header-bar">
+  <!-- ── PROMO BANNER ─────────────────────────────────────── -->
+  <div class="promo-banner" role="banner">
+    🎉 Free delivery available in Haripur &amp; Khalabat Township —
+    <a href="contact.html">Contact us for details</a>
+  </div>
+
+  <!-- ── HEADER ───────────────────────────────────────────── -->
+  <header class="top-header-bar" role="banner">
     <div class="container">
+
       <div class="logo">
-        <img src="assets/logo.png" alt="ZSE Logo" class="logo-icon" />
+        <a href="index.html" aria-label="ZSE Store Home">
+          <img src="assets/logo.png" alt="ZSE Store" class="logo-icon" />
+        </a>
       </div>
-      <div class="search-bar">
-        <input type="text" placeholder="Search Entire Store" id="searchkey" />
-        <button class="btn-search">Search</button>
+
+      <div class="search-bar" role="search">
+        <input type="search" id="searchkey" placeholder="Search products, pipes, fittings…"
+          autocomplete="off" aria-label="Search store" />
+        <button class="btn-search" aria-label="Search">🔍 Search</button>
       </div>
-      <button class="btn-shop-brands">Browse All Products</button>
-      <nav class="nav-categories">
-        <a href="index.html">Home</a>
+
+      <button class="btn-shop-brands" onclick="window.location.href='products.html'">
+        Browse All Products
+      </button>
+
+      <nav class="nav-categories" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
         <div class="dropdown">
-          <a href="products.html" class="dropbtn">Products</a>
-          <ul class="dropdown-menu">
-            <li><a href="products.html?category=Accessories">Accessories</a></li>
-            <li><a href="products.html?category=Sanitary Fittings">Sanitary Fittings</a></li>
-            <li><a href="products.html?category=Pipes %26 Fittings">Pipes & Fittings</a></li>
-            <li><a href="products.html?category=Water Tanks">Water Tanks</a></li>
-            <li><a href="products.html?category=Ceramics">Ceramics</a></li>
+          <a href="products.html" class="dropbtn">Products ▾</a>
+          <ul class="dropdown-menu" role="menu">
+            <li role="menuitem"><a href="products.html?category=Accessories">🛁 Accessories</a></li>
+            <li role="menuitem"><a href="products.html?category=Sanitary+Fittings">🔧 Sanitary Fittings</a></li>
+            <li role="menuitem"><a href="products.html?category=Pipes+%26+Fittings">🪠 Pipes &amp; Fittings</a></li>
+            <li role="menuitem"><a href="products.html?category=Water+Tanks">💧 Water Tanks</a></li>
+            <li role="menuitem"><a href="products.html?category=Ceramics">🚽 Ceramics</a></li>
+            <li role="menuitem" style="border-top:1px solid #222;margin-top:4px;padding-top:4px">
+              <a href="products.html" style="color:var(--gold)">📦 View All (310)</a>
+            </li>
           </ul>
         </div>
         <a href="contact.html">Contact</a>
       </nav>
-      <div class="order-hotline">
+
+      <div class="order-hotline" aria-label="Order hotline">
         <span>Order Hotline</span><br />
-        <a href="tel:+923185929927">+92-3185929927</a><br />
+        <a href="https://wa.me/923185929927" target="_blank" rel="noopener noreferrer">+92-318-5929927</a><br />
         <span>Call or WhatsApp</span>
       </div>
-    </div>
-  </div>
 
-  <!-- Hero Section with Slider -->
-  <section class="hero-slider">
-    <div class="slider-container">
-      <div class="slide fade">
-        <img src="assets/extra/main slider.png" alt="Main Slider" />
-        <div class="slide-text">
-          <h1>Welcome to ZSE</h1>
-          <p>Your trusted source for premium sanitary and electric solutions</p>
-          <a href="products.html" class="btn-cta">Browse Products</a>
+      <button class="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ── MOBILE NAV ────────────────────────────────────────── -->
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <a href="index.html">🏠 Home</a>
+    <div class="mobile-category-heading">Shop by Category</div>
+    <a href="products.html?category=Accessories">🛁 Accessories</a>
+    <a href="products.html?category=Sanitary+Fittings">🔧 Sanitary Fittings</a>
+    <a href="products.html?category=Pipes+%26+Fittings">🪠 Pipes &amp; Fittings</a>
+    <a href="products.html?category=Water+Tanks">💧 Water Tanks</a>
+    <a href="products.html?category=Ceramics">🚽 Ceramics</a>
+    <a href="products.html">📦 All Products (310)</a>
+    <div class="mobile-category-heading">More</div>
+    <a href="contact.html">📞 Contact Us</a>
+    <a href="https://wa.me/923185929927" target="_blank" rel="noopener noreferrer"
+      style="color:#25D366;font-weight:700">💬 WhatsApp Us</a>
+    <a href="tel:+923185929927" style="color:var(--gold);font-weight:700">📲 +92-318-5929927</a>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- ── HERO SLIDER ────────────────────────────────────── -->
+    <section class="hero-slider" aria-label="Featured promotions">
+      <div class="slider-container">
+
+        <div class="slide">
+          <img src="assets/extra/main slider.png" alt="ZSE Store — Premium Sanitary Supplies" />
+          <div class="slide-text">
+            <h1>Haripur's Trusted<br/>Sanitary Store</h1>
+            <p>310+ plumbing &amp; sanitary products — pipes, fittings, taps, tanks &amp; more</p>
+            <a href="products.html" class="btn-cta">Browse Products →</a>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="assets/extra/1.jpeg" alt="Quality Pipes and Fittings" />
+          <div class="slide-text">
+            <h1>PPR Pipes &amp;<br/>Fittings</h1>
+            <p>ACCUFIT and Master brand PPR pipes — PN16 &amp; PN20 grades in stock</p>
+            <a href="products.html?category=Pipes+%26+Fittings" class="btn-cta">Shop Pipes →</a>
+          </div>
+        </div>
+
+        <div class="slide faisal">
+          <img src="assets/extra/faisal sanitary.png" alt="Faisal Sanitary Fittings" />
+        </div>
+
+        <div class="slide master">
+          <img src="assets/extra/master fitting slider.png" alt="Master Sanitary Fittings" />
+        </div>
+
+        <button class="prev" aria-label="Previous slide">&#10094;</button>
+        <button class="next" aria-label="Next slide">&#10095;</button>
+        <div class="slider-dots" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- ── STORE STRIP ─────────────────────────────────────── -->
+    <div class="store-strip" aria-label="Store highlights">
+      <div class="store-strip-inner">
+        <div class="strip-item">
+          <span class="strip-icon">🏪</span>
+          <div class="strip-text">
+            <strong>Physical Store</strong>
+            Khalabat Township, Haripur KPK
+          </div>
+        </div>
+        <div class="strip-item">
+          <span class="strip-icon">📦</span>
+          <div class="strip-text">
+            <strong>310+ Products</strong>
+            PPR, UPVC, Taps, Tanks &amp; more
+          </div>
+        </div>
+        <div class="strip-item">
+          <span class="strip-icon">💬</span>
+          <div class="strip-text">
+            <strong>WhatsApp Orders</strong>
+            <a href="https://wa.me/923185929927" target="_blank" rel="noopener noreferrer"
+              style="color:var(--gold)">+92-318-5929927</a>
+          </div>
+        </div>
+        <div class="strip-item">
+          <span class="strip-icon">🕐</span>
+          <div class="strip-text">
+            <strong>Store Hours</strong>
+            Mon–Sat 9:00am – 8:00pm
+          </div>
         </div>
       </div>
-      <div class="slide fade">
-        <img src="assets/extra/1.jpeg" alt="Slide 1" />
-        <div class="slide-text">
-          <h1>Quality You Deserve</h1>
+    </div>
+
+    <!-- ── SHOP BY DEPARTMENT ─────────────────────────────── -->
+    <section class="shop-by-department" aria-labelledby="dept-heading">
+      <div class="section-heading">
+        <h2 id="dept-heading">Shop by Department</h2>
+        <p>Browse our full range of sanitary and plumbing products</p>
+      </div>
+      <div class="department-grid">
+
+        <a href="products.html?category=Accessories" class="department-item">
+          <img src="assets/products/basin mixer.jpeg" alt="Accessories — taps, mixers, bathroom sets" loading="lazy" />
+          <span>Accessories</span>
+        </a>
+
+        <a href="products.html?category=Sanitary+Fittings" class="department-item">
+          <img src="assets/products/Pipe Fittings.jpg" alt="Sanitary Fittings — elbows, tees, valves" loading="lazy" />
+          <span>Sanitary Fittings</span>
+        </a>
+
+        <a href="products.html?category=Pipes+%26+Fittings" class="department-item">
+          <img src="assets/products/pipes and fitting.jpeg" alt="Pipes and Fittings — PPR, UPVC" loading="lazy" />
+          <span>Pipes &amp; Fittings</span>
+        </a>
+
+        <a href="products.html?category=Water+Tanks" class="department-item">
+          <img src="assets/products/hdpe pipes.jpeg" alt="Water Tanks — Accufit, Atlas, Blue Supreme" loading="lazy" />
+          <span>Water Tanks</span>
+        </a>
+
+        <a href="products.html?category=Ceramics" class="department-item">
+          <img src="assets/products/toilets.jpeg" alt="Ceramics — toilets, wash basins" loading="lazy" />
+          <span>Ceramics</span>
+        </a>
+
+        <a href="products.html" class="department-item" style="border-color:var(--gold)">
+          <img src="assets/products/Pipe Fittings.jpg" alt="All Products" loading="lazy"
+            style="filter:brightness(0.6)" />
+          <span style="color:var(--gold)">View All 310 Products →</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ── FEATURED IN-STOCK PRODUCTS ────────────────────── -->
+    <section class="featured-section" aria-labelledby="featured-heading">
+      <div class="section-heading">
+        <h2 id="featured-heading">In Stock Now</h2>
+        <p>Ready to dispatch — available immediately from our store</p>
+      </div>
+      <div class="featured-grid" id="featuredProducts">
+        <!-- JS loads in-stock products from products.json -->
+        <div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--text-dim)">
+          Loading featured products…
         </div>
       </div>
-      <div class="slide fade faisal">
-        <img src="assets/extra/faisal sanitary.png" alt="Faisal Sanitary" />
+      <div style="text-align:center;margin-top:36px">
+        <a href="products.html?sort=instock" class="btn-cta">View All In-Stock Products →</a>
       </div>
-      <div class="slide fade master">
-        <img src="assets/extra/master fitting slider.png" alt="Master Fitting" />
-      </div>
-      <a class="prev">&#10094;</a>
-      <a class="next">&#10095;</a>
-    </div>
-  </section>
+    </section>
 
-  <!-- Departments -->
-  <section class="shop-by-department container">
-    <h2>Shop by Department</h2>
-    <div class="department-grid">
-      <a href="products.html?category=Accessories" class="department-item"><img src="assets/products/basin mixer.jpeg" alt="Accessories" /><span>Accessories</span></a>
-      <a href="products.html?category=Sanitary Fittings" class="department-item"><img src="assets/products/Pipe Fittings.jpg" alt="Sanitary Fittings" /><span>Sanitary Fittings</span></a>
-      <a href="products.html?category=Pipes %26 Fittings" class="department-item"><img src="assets/products/pipes and fitting.jpeg" alt="Pipes" /><span>Pipes & Fittings</span></a>
-      <a href="products.html?category=Water Tanks" class="department-item"><img src="assets/products/hdpe pipes.jpeg" alt="Water Tanks" /><span>Water Tanks</span></a>
-      <a href="products.html?category=Ceramics" class="department-item"><img src="assets/products/toilets.jpeg" alt="Ceramics" /><span>Ceramics</span></a>
-      <a href="products.html" class="department-item"><img src="assets/products/taps.jpg" alt="All Products" /><span>All Products</span></a>
-    </div>
-  </section>
-
-  <!-- Contact Info -->
-  <section class="contact-info container">
-    <h2>Need Help?</h2>
-    <div class="contact-box-grid">
-      <div class="contact-box">
-        <h3>Ask for a Quote</h3>
-        <p>Get a Quote on your Favourite Product.</p>
-        <a href="products.html" class="btn-cta">Browse Catalogue</a>
+    <!-- ── BRANDS WE CARRY ────────────────────────────────── -->
+    <section class="brands-section" aria-labelledby="brands-heading">
+      <div class="section-heading">
+        <h2 id="brands-heading">Brands We Carry</h2>
+        <p>Trusted names in Pakistan's sanitary and plumbing industry</p>
       </div>
-      <div class="contact-box">
-        <h3>Call Us Now</h3>
-        <p><strong>+92 3185929927</strong></p>
-        <p>Mon–Sat | 9:00am–8:00pm</p>
+      <div class="brands-grid">
+        <span class="brand-pill">ACCUFIT PPR</span>
+        <span class="brand-pill">Master Sanitary</span>
+        <span class="brand-pill">Faisal Sanitary</span>
+        <span class="brand-pill">Atlas Red Tanks</span>
+        <span class="brand-pill">Blue Supreme</span>
+        <span class="brand-pill">Green Medium</span>
+        <span class="brand-pill">YS Fittings</span>
+        <span class="brand-pill">Tempo Series</span>
+        <span class="brand-pill">Mughal Valves</span>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="footer">
+    <!-- ── WHY ZSE ─────────────────────────────────────────── -->
+    <section class="why-section" aria-labelledby="why-heading">
+      <div class="section-heading">
+        <h2 id="why-heading">Why Choose ZSE?</h2>
+        <p>Your local sanitary and plumbing specialists in Haripur</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">🏪</div>
+          <h3>Walk-in Store</h3>
+          <p>Visit us at Qureshi Chowk, Sector #1, Khalabat Township — Mon to Sat, 9am–8pm</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">✅</div>
+          <h3>Quality Products</h3>
+          <p>Sourced from trusted Pakistani brands — ACCUFIT, Master, Atlas and more</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">💬</div>
+          <h3>WhatsApp Orders</h3>
+          <p>Browse our catalogue and send us your list — we confirm price and availability fast</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">📦</div>
+          <h3>Local Delivery</h3>
+          <p>Delivery available in Haripur, Khalabat, and surrounding areas — ask for rates</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA SECTION ────────────────────────────────────── -->
+    <section class="cta-section" aria-label="Get in touch">
+      <h2>Ready to Order?</h2>
+      <p>Browse our 310-product catalogue, then reach out — we'll get back to you fast.</p>
+      <div class="cta-buttons">
+        <a href="https://wa.me/923185929927" target="_blank" rel="noopener noreferrer"
+          class="btn-cta-wa">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48" aria-hidden="true">
+            <circle cx="24" cy="24" r="24" fill="#fff" fill-opacity=".2"/>
+            <path fill="#fff" d="M35.2 12.8A15.8 15.8 0 0 0 8.1 30.7L6 42l11.6-3A15.8 15.8 0 0 0 35.2 12.8zm-11.2 24.3a13.1 13.1 0 0 1-6.7-1.8l-.5-.3-5.1 1.3 1.4-4.9-.3-.5a13.1 13.1 0 1 1 11.2 6.2zm7.2-9.8c-.4-.2-2.3-1.1-2.7-1.3-.4-.1-.6-.2-.9.2s-1 1.3-1.2 1.6c-.2.3-.5.3-.9.1a11.3 11.3 0 0 1-3.3-2 12.4 12.4 0 0 1-2.3-2.8c-.2-.4 0-.6.2-.8l.6-.7.4-.7.1-.5-1.2-2.9c-.3-.7-.6-.6-.9-.6h-.7c-.3 0-.7.1-1 .5a4.5 4.5 0 0 0-1.4 3.3 7.8 7.8 0 0 0 1.6 4.1 17.9 17.9 0 0 0 6.8 6 9.7 9.7 0 0 0 4.5 1.2 4.1 4.1 0 0 0 2.7-1 4.6 4.6 0 0 0 1.4-3c.1-.6-.2-.9-.5-1z"/>
+          </svg>
+          WhatsApp Us Now
+        </a>
+        <a href="products.html" class="btn-cta-outline">📦 Browse Catalogue</a>
+        <a href="contact.html" class="btn-cta-outline">📞 Contact Us</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FLOATING WHATSAPP ─────────────────────────────────── -->
+  <a href="https://wa.me/923185929927" target="_blank" rel="noopener noreferrer"
+    class="floating-whatsapp" aria-label="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 48 48" aria-hidden="true">
+      <circle cx="24" cy="24" r="24" fill="#25D366"/>
+      <path fill="#fff" d="M35.2 12.8A15.8 15.8 0 0 0 8.1 30.7L6 42l11.6-3A15.8 15.8 0 0 0 35.2 12.8zm-11.2 24.3a13.1 13.1 0 0 1-6.7-1.8l-.5-.3-5.1 1.3 1.4-4.9-.3-.5a13.1 13.1 0 1 1 11.2 6.2zm7.2-9.8c-.4-.2-2.3-1.1-2.7-1.3-.4-.1-.6-.2-.9.2s-1 1.3-1.2 1.6c-.2.3-.5.3-.9.1a11.3 11.3 0 0 1-3.3-2 12.4 12.4 0 0 1-2.3-2.8c-.2-.4 0-.6.2-.8l.6-.7.4-.7.1-.5-1.2-2.9c-.3-.7-.6-.6-.9-.6h-.7c-.3 0-.7.1-1 .5a4.5 4.5 0 0 0-1.4 3.3 7.8 7.8 0 0 0 1.6 4.1 17.9 17.9 0 0 0 6.8 6 9.7 9.7 0 0 0 4.5 1.2 4.1 4.1 0 0 0 2.7-1 4.6 4.6 0 0 0 1.4-3c.1-.6-.2-.9-.5-1z"/>
+    </svg>
+  </a>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
     <div class="footer-content">
-      <nav class="footer-nav">
-        <a href="index.html">Home</a>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html" aria-current="page">Home</a>
         <a href="products.html">Products</a>
         <a href="contact.html">Contact</a>
+        <a href="https://wa.me/923185929927" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a href="tel:+923185929927">+92-318-5929927</a>
       </nav>
-      <p>Khyber Pakhtunkhwa, Haripur, Khalabat Twp, Qureshi Chowk, Sector #1, Main Road</p>
-      <p>© 2025 - ZSE | All Rights Reserved</p>
+      <p style="margin-top:12px">
+        📍 Qureshi Chowk, Sector #1, Main Road, Khalabat Township, Haripur, KPK, Pakistan
+      </p>
+      <p>&copy; <span id="yr"></span> ZSE — Zain Sanitary &amp; Electric Store. All Rights Reserved.</p>
     </div>
   </footer>
 
-  <script src="js/home.js"></script>
-  <script src="js/dropdown.js"></script>
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+  <script src="js/home.js" defer></script>
 </body>
 </html>
