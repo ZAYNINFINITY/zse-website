@@ -17,31 +17,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
   <style>
-    /* ── Homepage-only styles ─────────────────────────────── */
-
-    /* Slider dots on hero */
-    .slider-dots {
-      position: absolute;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-      gap: 8px;
-      z-index: 4;
-    }
-    .slider-dot {
-      width: 8px; height: 8px;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.35);
-      border: none;
-      cursor: pointer;
-      transition: background 0.25s, transform 0.25s;
-      padding: 0;
-    }
-    .slider-dot.active { background: var(--gold); transform: scale(1.3); }
-
-    /* Promo banner */
+    /* ── Homepage-only styles ──────────────────────────────── */
     .promo-banner {
       background: var(--gold);
       color: #121212;
@@ -53,7 +31,6 @@
     }
     .promo-banner a { color: #121212; text-decoration: underline; }
 
-    /* Department section */
     .shop-by-department {
       background: var(--bg2);
       padding: 56px 24px 64px;
@@ -78,7 +55,6 @@
       text-decoration: none;
       transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
       padding-bottom: 16px;
-      cursor: pointer;
     }
     .department-item:hover {
       transform: translateY(-6px);
@@ -106,7 +82,6 @@
     }
     .department-item:hover span { color: var(--gold); }
 
-    /* Featured products section */
     .featured-section {
       background: var(--bg);
       padding: 64px 24px;
@@ -119,11 +94,8 @@
       max-width: 1200px;
       margin: 0 auto;
     }
-    /* featured product cards reuse .product-card from style.css */
     .featured-section .product-card { cursor: pointer; }
-    .featured-section .product-card:hover { border-color: var(--gold); box-shadow: var(--shadow-gold); transform: translateY(-5px); }
 
-    /* Brands section */
     .brands-section {
       background: var(--bg2);
       padding: 56px 24px;
@@ -148,13 +120,8 @@
       transition: border-color var(--transition), color var(--transition), background var(--transition);
       white-space: nowrap;
     }
-    .brand-pill:hover {
-      border-color: var(--gold);
-      color: var(--gold);
-      background: var(--gold-dim);
-    }
+    .brand-pill:hover { border-color: var(--gold); color: var(--gold); background: var(--gold-dim); }
 
-    /* Why ZSE section */
     .why-section {
       background: var(--bg);
       padding: 64px 24px;
@@ -176,11 +143,10 @@
       transition: border-color var(--transition), box-shadow var(--transition);
     }
     .why-card:hover { border-color: var(--gold); box-shadow: var(--shadow-gold); }
-    .why-icon { font-size: 2.2rem; margin-bottom: 14px; }
+    .why-icon { font-size: 2rem; margin-bottom: 14px; line-height: 1; }
     .why-card h3 { font-size: 1rem; font-weight: 700; color: var(--text); margin-bottom: 8px; }
     .why-card p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; }
 
-    /* Contact CTA section */
     .cta-section {
       background: linear-gradient(135deg, #0a0a0a 0%, #1a1400 100%);
       border-top: 1px solid var(--border);
@@ -195,27 +161,24 @@
       display: inline-flex; align-items: center; gap: 10px;
       background: var(--wa-green); color: #fff;
       padding: 14px 28px; border-radius: var(--radius-md);
-      font-weight: 700; font-size: 0.95rem;
-      text-decoration: none;
+      font-weight: 700; font-size: 0.95rem; text-decoration: none;
       transition: background var(--transition), transform var(--transition);
     }
     .btn-cta-wa:hover { background: #1ebe57; transform: translateY(-2px); }
     .btn-cta-outline {
-      display: inline-flex; align-items: center; gap: 10px;
+      display: inline-flex; align-items: center;
       background: transparent; color: var(--gold);
       border: 2px solid var(--gold);
       padding: 13px 28px; border-radius: var(--radius-md);
-      font-weight: 700; font-size: 0.95rem;
-      text-decoration: none;
+      font-weight: 700; font-size: 0.95rem; text-decoration: none;
       transition: background var(--transition), color var(--transition), transform var(--transition);
     }
     .btn-cta-outline:hover { background: var(--gold); color: #121212; transform: translateY(-2px); }
 
-    /* Store info strip */
     .store-strip {
       background: #000;
       border-top: 1px solid var(--border);
-      padding: 24px;
+      padding: 20px 24px;
     }
     .store-strip-inner {
       max-width: 1100px;
@@ -226,29 +189,59 @@
       gap: 20px;
     }
     .strip-item { display: flex; align-items: center; gap: 12px; }
-    .strip-icon { font-size: 1.5rem; }
+    .strip-icon {
+      width: 36px; height: 36px;
+      background: var(--gold-dim);
+      border: 1px solid rgba(255,215,0,0.2);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
     .strip-text { font-size: 0.8rem; color: var(--text-muted); line-height: 1.5; }
     .strip-text strong { color: var(--text); display: block; font-size: 0.875rem; }
 
-    /* Responsive */
+    /* Slider dots */
+    .slider-dots {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 8px;
+      z-index: 4;
+    }
+    .slider-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.35);
+      border: none;
+      cursor: pointer;
+      transition: background 0.25s, transform 0.25s;
+      padding: 0;
+    }
+    .slider-dot.active { background: var(--gold); transform: scale(1.3); }
+
     @media (max-width: 768px) {
       .department-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
-      .featured-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
-      .why-grid { grid-template-columns: 1fr 1fr; gap: 14px; }
-      .store-strip-inner { justify-content: center; }
+      .featured-grid   { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+      .why-grid        { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+      .store-strip-inner { justify-content: center; gap: 16px; }
       .cta-buttons { flex-direction: column; align-items: center; }
+      .btn-cta-wa, .btn-cta-outline { width: 100%; max-width: 320px; justify-content: center; }
     }
     @media (max-width: 480px) {
       .department-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
       .why-grid { grid-template-columns: 1fr; }
+      .featured-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
     }
   </style>
 </head>
 <body>
 
-  <!-- ── PROMO BANNER ─────────────────────────────────────── -->
-  <div class="promo-banner" role="banner">
-    🎉 Free delivery available in Haripur &amp; Khalabat Township —
+  <!-- ── PROMO BANNER ──────────────────────────────────────── -->
+  <div class="promo-banner" role="complementary">
+    Free delivery available in Haripur &amp; Khalabat Township —
     <a href="contact.html">Contact us for details</a>
   </div>
 
@@ -265,7 +258,7 @@
       <div class="search-bar" role="search">
         <input type="search" id="searchkey" placeholder="Search products, pipes, fittings…"
           autocomplete="off" aria-label="Search store" />
-        <button class="btn-search" aria-label="Search">🔍 Search</button>
+        <button class="btn-search" aria-label="Search">Search</button>
       </div>
 
       <button class="btn-shop-brands" onclick="window.location.href='products.html'">
@@ -277,13 +270,13 @@
         <div class="dropdown">
           <a href="products.html" class="dropbtn">Products ▾</a>
           <ul class="dropdown-menu" role="menu">
-            <li role="menuitem"><a href="products.html?category=Accessories">🛁 Accessories</a></li>
-            <li role="menuitem"><a href="products.html?category=Sanitary+Fittings">🔧 Sanitary Fittings</a></li>
-            <li role="menuitem"><a href="products.html?category=Pipes+%26+Fittings">🪠 Pipes &amp; Fittings</a></li>
-            <li role="menuitem"><a href="products.html?category=Water+Tanks">💧 Water Tanks</a></li>
-            <li role="menuitem"><a href="products.html?category=Ceramics">🚽 Ceramics</a></li>
+            <li role="menuitem"><a href="products.html?category=Accessories">Accessories</a></li>
+            <li role="menuitem"><a href="products.html?category=Sanitary+Fittings">Sanitary Fittings</a></li>
+            <li role="menuitem"><a href="products.html?category=Pipes+%26+Fittings">Pipes &amp; Fittings</a></li>
+            <li role="menuitem"><a href="products.html?category=Water+Tanks">Water Tanks</a></li>
+            <li role="menuitem"><a href="products.html?category=Ceramics">Ceramics</a></li>
             <li role="menuitem" style="border-top:1px solid #222;margin-top:4px;padding-top:4px">
-              <a href="products.html" style="color:var(--gold)">📦 View All (310)</a>
+              <a href="products.html" style="color:var(--gold)">All Products (310)</a>
             </li>
           </ul>
         </div>
@@ -304,19 +297,19 @@
 
   <!-- ── MOBILE NAV ────────────────────────────────────────── -->
   <nav class="mobile-nav" aria-label="Mobile navigation">
-    <a href="index.html">🏠 Home</a>
+    <a href="index.html">Home</a>
     <div class="mobile-category-heading">Shop by Category</div>
-    <a href="products.html?category=Accessories">🛁 Accessories</a>
-    <a href="products.html?category=Sanitary+Fittings">🔧 Sanitary Fittings</a>
-    <a href="products.html?category=Pipes+%26+Fittings">🪠 Pipes &amp; Fittings</a>
-    <a href="products.html?category=Water+Tanks">💧 Water Tanks</a>
-    <a href="products.html?category=Ceramics">🚽 Ceramics</a>
-    <a href="products.html">📦 All Products (310)</a>
+    <a href="products.html?category=Accessories">Accessories</a>
+    <a href="products.html?category=Sanitary+Fittings">Sanitary Fittings</a>
+    <a href="products.html?category=Pipes+%26+Fittings">Pipes &amp; Fittings</a>
+    <a href="products.html?category=Water+Tanks">Water Tanks</a>
+    <a href="products.html?category=Ceramics">Ceramics</a>
+    <a href="products.html">All Products (310)</a>
     <div class="mobile-category-heading">More</div>
-    <a href="contact.html">📞 Contact Us</a>
+    <a href="contact.html">Contact Us</a>
     <a href="https://wa.me/923185929927" target="_blank" rel="noopener noreferrer"
-      style="color:#25D366;font-weight:700">💬 WhatsApp Us</a>
-    <a href="tel:+923185929927" style="color:var(--gold);font-weight:700">📲 +92-318-5929927</a>
+      style="color:#25D366;font-weight:700">WhatsApp Us</a>
+    <a href="tel:+923185929927" style="color:var(--gold);font-weight:700">+92-318-5929927</a>
   </nav>
 
   <main id="main-content">
@@ -330,7 +323,7 @@
           <div class="slide-text">
             <h1>Haripur's Trusted<br/>Sanitary Store</h1>
             <p>310+ plumbing &amp; sanitary products — pipes, fittings, taps, tanks &amp; more</p>
-            <a href="products.html" class="btn-cta">Browse Products →</a>
+            <a href="products.html" class="btn-cta">Browse Products</a>
           </div>
         </div>
 
@@ -339,7 +332,7 @@
           <div class="slide-text">
             <h1>PPR Pipes &amp;<br/>Fittings</h1>
             <p>ACCUFIT and Master brand PPR pipes — PN16 &amp; PN20 grades in stock</p>
-            <a href="products.html?category=Pipes+%26+Fittings" class="btn-cta">Shop Pipes →</a>
+            <a href="products.html?category=Pipes+%26+Fittings" class="btn-cta">Shop Pipes</a>
           </div>
         </div>
 
@@ -357,25 +350,25 @@
       </div>
     </section>
 
-    <!-- ── STORE STRIP ─────────────────────────────────────── -->
-    <div class="store-strip" aria-label="Store highlights">
+    <!-- ── STORE INFO STRIP ──────────────────────────────── -->
+    <div class="store-strip" aria-label="Store information">
       <div class="store-strip-inner">
         <div class="strip-item">
-          <span class="strip-icon">🏪</span>
+          <div class="strip-icon" aria-hidden="true">&#x1F3EA;</div>
           <div class="strip-text">
             <strong>Physical Store</strong>
             Khalabat Township, Haripur KPK
           </div>
         </div>
         <div class="strip-item">
-          <span class="strip-icon">📦</span>
+          <div class="strip-icon" aria-hidden="true">&#x1F4E6;</div>
           <div class="strip-text">
             <strong>310+ Products</strong>
             PPR, UPVC, Taps, Tanks &amp; more
           </div>
         </div>
         <div class="strip-item">
-          <span class="strip-icon">💬</span>
+          <div class="strip-icon" aria-hidden="true">&#x1F4AC;</div>
           <div class="strip-text">
             <strong>WhatsApp Orders</strong>
             <a href="https://wa.me/923185929927" target="_blank" rel="noopener noreferrer"
@@ -383,7 +376,7 @@
           </div>
         </div>
         <div class="strip-item">
-          <span class="strip-icon">🕐</span>
+          <div class="strip-icon" aria-hidden="true">&#x1F550;</div>
           <div class="strip-text">
             <strong>Store Hours</strong>
             Mon–Sat 9:00am – 8:00pm
@@ -399,59 +392,51 @@
         <p>Browse our full range of sanitary and plumbing products</p>
       </div>
       <div class="department-grid">
-
         <a href="products.html?category=Accessories" class="department-item">
-          <img src="assets/products/basin mixer.jpeg" alt="Accessories — taps, mixers, bathroom sets" loading="lazy" />
+          <img src="assets/products/basin mixer.jpeg" alt="Accessories" loading="lazy" />
           <span>Accessories</span>
         </a>
-
         <a href="products.html?category=Sanitary+Fittings" class="department-item">
-          <img src="assets/products/Pipe Fittings.jpg" alt="Sanitary Fittings — elbows, tees, valves" loading="lazy" />
+          <img src="assets/products/Pipe Fittings.jpg" alt="Sanitary Fittings" loading="lazy" />
           <span>Sanitary Fittings</span>
         </a>
-
         <a href="products.html?category=Pipes+%26+Fittings" class="department-item">
-          <img src="assets/products/pipes and fitting.jpeg" alt="Pipes and Fittings — PPR, UPVC" loading="lazy" />
+          <img src="assets/products/pipes and fitting.jpeg" alt="Pipes and Fittings" loading="lazy" />
           <span>Pipes &amp; Fittings</span>
         </a>
-
         <a href="products.html?category=Water+Tanks" class="department-item">
-          <img src="assets/products/hdpe pipes.jpeg" alt="Water Tanks — Accufit, Atlas, Blue Supreme" loading="lazy" />
+          <img src="assets/products/hdpe pipes.jpeg" alt="Water Tanks" loading="lazy" />
           <span>Water Tanks</span>
         </a>
-
         <a href="products.html?category=Ceramics" class="department-item">
-          <img src="assets/products/toilets.jpeg" alt="Ceramics — toilets, wash basins" loading="lazy" />
+          <img src="assets/products/toilets.jpeg" alt="Ceramics" loading="lazy" />
           <span>Ceramics</span>
         </a>
-
         <a href="products.html" class="department-item" style="border-color:var(--gold)">
           <img src="assets/products/Pipe Fittings.jpg" alt="All Products" loading="lazy"
-            style="filter:brightness(0.6)" />
-          <span style="color:var(--gold)">View All 310 Products →</span>
+            style="filter:brightness(0.55)" />
+          <span style="color:var(--gold)">View All 310 Products</span>
         </a>
-
       </div>
     </section>
 
-    <!-- ── FEATURED IN-STOCK PRODUCTS ────────────────────── -->
+    <!-- ── FEATURED IN-STOCK ──────────────────────────────── -->
     <section class="featured-section" aria-labelledby="featured-heading">
       <div class="section-heading">
         <h2 id="featured-heading">In Stock Now</h2>
         <p>Ready to dispatch — available immediately from our store</p>
       </div>
       <div class="featured-grid" id="featuredProducts">
-        <!-- JS loads in-stock products from products.json -->
         <div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--text-dim)">
-          Loading featured products…
+          Loading…
         </div>
       </div>
       <div style="text-align:center;margin-top:36px">
-        <a href="products.html?sort=instock" class="btn-cta">View All In-Stock Products →</a>
+        <a href="products.html" class="btn-cta">View All In-Stock Products</a>
       </div>
     </section>
 
-    <!-- ── BRANDS WE CARRY ────────────────────────────────── -->
+    <!-- ── BRANDS ─────────────────────────────────────────── -->
     <section class="brands-section" aria-labelledby="brands-heading">
       <div class="section-heading">
         <h2 id="brands-heading">Brands We Carry</h2>
@@ -478,43 +463,42 @@
       </div>
       <div class="why-grid">
         <div class="why-card">
-          <div class="why-icon">🏪</div>
+          <div class="why-icon" aria-hidden="true">&#x1F3EA;</div>
           <h3>Walk-in Store</h3>
           <p>Visit us at Qureshi Chowk, Sector #1, Khalabat Township — Mon to Sat, 9am–8pm</p>
         </div>
         <div class="why-card">
-          <div class="why-icon">✅</div>
+          <div class="why-icon" aria-hidden="true">&#x2714;</div>
           <h3>Quality Products</h3>
           <p>Sourced from trusted Pakistani brands — ACCUFIT, Master, Atlas and more</p>
         </div>
         <div class="why-card">
-          <div class="why-icon">💬</div>
+          <div class="why-icon" aria-hidden="true">&#x1F4AC;</div>
           <h3>WhatsApp Orders</h3>
           <p>Browse our catalogue and send us your list — we confirm price and availability fast</p>
         </div>
         <div class="why-card">
-          <div class="why-icon">📦</div>
+          <div class="why-icon" aria-hidden="true">&#x1F69A;</div>
           <h3>Local Delivery</h3>
           <p>Delivery available in Haripur, Khalabat, and surrounding areas — ask for rates</p>
         </div>
       </div>
     </section>
 
-    <!-- ── CTA SECTION ────────────────────────────────────── -->
-    <section class="cta-section" aria-label="Get in touch">
+    <!-- ── CTA ────────────────────────────────────────────── -->
+    <section class="cta-section" aria-label="Call to action">
       <h2>Ready to Order?</h2>
-      <p>Browse our 310-product catalogue, then reach out — we'll get back to you fast.</p>
+      <p>Browse our 310-product catalogue, then reach out — we'll respond promptly.</p>
       <div class="cta-buttons">
-        <a href="https://wa.me/923185929927" target="_blank" rel="noopener noreferrer"
-          class="btn-cta-wa">
+        <a href="https://wa.me/923185929927" target="_blank" rel="noopener noreferrer" class="btn-cta-wa">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48" aria-hidden="true">
-            <circle cx="24" cy="24" r="24" fill="#fff" fill-opacity=".2"/>
+            <circle cx="24" cy="24" r="24" fill="#fff" fill-opacity=".25"/>
             <path fill="#fff" d="M35.2 12.8A15.8 15.8 0 0 0 8.1 30.7L6 42l11.6-3A15.8 15.8 0 0 0 35.2 12.8zm-11.2 24.3a13.1 13.1 0 0 1-6.7-1.8l-.5-.3-5.1 1.3 1.4-4.9-.3-.5a13.1 13.1 0 1 1 11.2 6.2zm7.2-9.8c-.4-.2-2.3-1.1-2.7-1.3-.4-.1-.6-.2-.9.2s-1 1.3-1.2 1.6c-.2.3-.5.3-.9.1a11.3 11.3 0 0 1-3.3-2 12.4 12.4 0 0 1-2.3-2.8c-.2-.4 0-.6.2-.8l.6-.7.4-.7.1-.5-1.2-2.9c-.3-.7-.6-.6-.9-.6h-.7c-.3 0-.7.1-1 .5a4.5 4.5 0 0 0-1.4 3.3 7.8 7.8 0 0 0 1.6 4.1 17.9 17.9 0 0 0 6.8 6 9.7 9.7 0 0 0 4.5 1.2 4.1 4.1 0 0 0 2.7-1 4.6 4.6 0 0 0 1.4-3c.1-.6-.2-.9-.5-1z"/>
           </svg>
           WhatsApp Us Now
         </a>
-        <a href="products.html" class="btn-cta-outline">📦 Browse Catalogue</a>
-        <a href="contact.html" class="btn-cta-outline">📞 Contact Us</a>
+        <a href="products.html" class="btn-cta-outline">Browse Catalogue</a>
+        <a href="contact.html" class="btn-cta-outline">Contact Us</a>
       </div>
     </section>
 
@@ -539,9 +523,7 @@
         <a href="https://wa.me/923185929927" target="_blank" rel="noopener noreferrer">WhatsApp</a>
         <a href="tel:+923185929927">+92-318-5929927</a>
       </nav>
-      <p style="margin-top:12px">
-        📍 Qureshi Chowk, Sector #1, Main Road, Khalabat Township, Haripur, KPK, Pakistan
-      </p>
+      <p style="margin-top:12px">Qureshi Chowk, Sector #1, Main Road, Khalabat Township, Haripur, KPK, Pakistan</p>
       <p>&copy; <span id="yr"></span> ZSE — Zain Sanitary &amp; Electric Store. All Rights Reserved.</p>
     </div>
   </footer>

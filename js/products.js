@@ -9,76 +9,146 @@
 // ─── IMAGE MAP ────────────────────────────────────────────────
 // Maps product name keywords → Unsplash photo ID (stable CDN links)
 // Each photo is free, commercial-use, no attribution required.
+// All images served from local assets — copied from sanitary.pk via copy-images.ps1
+const BASE = 'assets/products/';
+
 const IMAGE_MAP = [
-  // Valves
-  { keys: ['ball valve', 'ballvalve'],            img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80' },
-  { keys: ['gate valve'],                          img: 'https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=400&q=80' },
-  { keys: ['foot valve'],                          img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80' },
-  { keys: ['non return valve', 'check valve'],     img: 'https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=400&q=80' },
-  { keys: ['union valve'],                         img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80' },
-  // Elbows
-  { keys: ['elbow 90', 'elbow ppr', 'elbow pvc'], img: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&q=80' },
-  { keys: ['elbow 45'],                            img: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&q=80' },
-  { keys: ['elbow mfit', 'mixer elbow'],           img: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&q=80' },
-  // Tees
-  { keys: ['equal tee', 'tee ppr', 'tee pvc', 'y tee', 'plug tee'], img: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&q=80' },
-  // Sockets / Unions / Plugs
-  { keys: ['socket ppr', 'socket mfit', 'socket pvc'], img: 'https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=400&q=80' },
-  { keys: ['union accufit', 'union master'],        img: 'https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=400&q=80' },
-  { keys: ['plug accufit', 'plug master', 'plug elbow'], img: 'https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=400&q=80' },
-  { keys: ['end cap'],                              img: 'https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=400&q=80' },
-  { keys: ['c-band'],                              img: 'https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=400&q=80' },
-  // GI / Brass fittings
-  { keys: ['angle nipple'],                        img: 'https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=400&q=80' },
-  { keys: ['pipe nipple', 'nipple'],               img: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&q=80' },
-  { keys: ['gi elbow'],                            img: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&q=80' },
-  { keys: ['cp nozzle', 'water nozzle'],           img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80' },
-  { keys: ['tee cock'],                            img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80' },
-  // PVC fittings / drain
-  { keys: ['p trap', 'clean out', 'bend mfit', 'plug elbow', 'y tee pvc', 'socket mfit'], img: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&q=80' },
-  // Taps & Mixers
-  { keys: ['basin mixer'],                         img: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=400&q=80' },
-  { keys: ['sink mixer'],                          img: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=400&q=80' },
-  { keys: ['vanity mixer'],                        img: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=400&q=80' },
-  { keys: ['bibcock', 'bicock'],                   img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80' },
-  { keys: ['single pillar cock', 'sink cock'],     img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80' },
-  { keys: ['double bibcock'],                      img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80' },
-  { keys: ['toilet shower', 'shower neck', 'sink shower neck'], img: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=400&q=80' },
-  // Bathroom accessories
-  { keys: ['bath accessories set'],                img: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=400&q=80' },
-  { keys: ['tissue holder'],                       img: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=400&q=80' },
-  { keys: ['brush holder'],                        img: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=400&q=80' },
-  { keys: ['soap dish'],                           img: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=400&q=80' },
-  { keys: ['dress holder'],                        img: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=400&q=80' },
-  { keys: ['mirror'],                              img: 'https://images.unsplash.com/photo-1620626011761-996317702782?w=400&q=80' },
-  { keys: ['sink bowl'],                           img: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=400&q=80' },
-  { keys: ['basin waste', 'sink waste'],           img: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=400&q=80' },
-  { keys: ['floor waste'],                         img: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&q=80' },
-  // Hardware / small items
-  { keys: ['flexible pipe'],                       img: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&q=80' },
-  { keys: ['jubilee clamp', 'killi clamp', 'u clamp'], img: 'https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=400&q=80' },
-  { keys: ['manhole'],                             img: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&q=80' },
-  { keys: ['bolt kit'],                            img: 'https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=400&q=80' },
-  { keys: ['rawal plug', 'screw fastener'],        img: 'https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=400&q=80' },
-  { keys: ['steel nails'],                         img: 'https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=400&q=80' },
-  { keys: ['teflon tape', 'dhaga'],                img: 'https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=400&q=80' },
-  { keys: ['blade'],                               img: 'https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=400&q=80' },
-  { keys: ['waste pipe', 'garden pipe'],           img: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&q=80' },
-  { keys: ['geezer wire', 'hook patti'],           img: 'https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=400&q=80' },
-  // PPR Pipes
-  { keys: ['pipe ppr accufit'],                    img: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&q=80' },
-  { keys: ['pipe ppr master'],                     img: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&q=80' },
-  { keys: ['pipe pn16', 'pipe pn20'],              img: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&q=80' },
-  { keys: ['upvc pipe'],                           img: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&q=80' },
-  // Water tanks
-  { keys: ['water tank accufit loft'],             img: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&q=80' },
-  { keys: ['water tank atlas red'],                img: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&q=80' },
-  { keys: ['water tank blue supreme'],             img: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&q=80' },
-  { keys: ['water tank green medium'],             img: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&q=80' },
-  { keys: ['water tank'],                          img: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&q=80' },
-  // Ceramics
-  { keys: ['wc thai', 'toilet'],                   img: 'https://images.unsplash.com/photo-1584622781564-1d987f7333c1?w=400&q=80' },
-  { keys: ['wash basin', 'basin styilo'],          img: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=400&q=80' },
+  // ── Valves ──────────────────────────────────────────────────────────
+  // valve-gate.jpg = green gate valve (from screenshots)
+  // no-return-valve.jpg = PPRC no return valve (green, from screenshots)
+  // union-valve.jpg = brass ball valve with union (from screenshots)
+  // safety-valve.jpg = safety valve with brass top (from screenshots)
+  // stop-cock.jpg = stop cock (from screenshots)
+  { keys: ['ball valve'],                            img: BASE+'union-valve.jpg' },
+  { keys: ['gate valve'],                            img: BASE+'valve-gate.jpg' },
+  { keys: ['foot valve'],                            img: BASE+'valve-gate.jpg' },
+  { keys: ['non return valve'],                      img: BASE+'no-return-valve.jpg' },
+  { keys: ['union valve'],                           img: BASE+'union-valve.jpg' },
+  { keys: ['safety valve'],                          img: BASE+'safety-valve.jpg' },
+  { keys: ['stop cock'],                             img: BASE+'stop-cock.jpg' },
+  { keys: ['tee cock'],                              img: BASE+'stop-cock.jpg' },
+
+  // ── Elbows ──────────────────────────────────────────────────────────
+  // elbow-45.jpg = 45° PPR elbow (green, from screenshots)
+  // elbow-equal.jpg = 90° equal elbow PPR (green, from screenshots)
+  // elbow-reducing.jpg = reducing elbow PPR (green, from screenshots)
+  // elbow-female-metal.jpg = PPR elbow with female metal insert
+  // elbow-male-metal.jpg = PPR elbow with male metal insert
+  // elbow-3d-female-metal.jpg = 3D elbow female metal
+  // 3d-elbow.jpg = 3D PPR elbow
+  { keys: ['elbow 45'],                              img: BASE+'elbow-45.jpg' },
+  { keys: ['elbow 90', 'equal elbow'],               img: BASE+'elbow-equal.jpg' },
+  { keys: ['elbow ppr accufit', 'elbow ppr master'], img: BASE+'elbow-equal.jpg' },
+  { keys: ['elbow pvc', 'elbow mfit', 'bend mfit'],  img: BASE+'elbow-reducing.jpg' },
+  { keys: ['elbow pprc accufit 25x', 'elbow pprc accufit 32x',
+            'elbow ppr accufit 25x', 'elbow ppr accufit 32x',
+            'elbow ppr master 25x', 'elbow ppr master 32x'],
+                                                     img: BASE+'elbow-female-metal.jpg' },
+  { keys: ['gi elbow', 'elbow fm'],                  img: BASE+'elbow-female-metal.jpg' },
+  { keys: ['mixer elbow'],                           img: BASE+'mixer-clamp-fixed.jpg' },
+
+  // ── Tees ────────────────────────────────────────────────────────────
+  // tee-female-side-bush.jpg = PPR tee with female metal side insert
+  // tee-reducing.jpg = reducing tee PPR (green)
+  // tee-female-metal.jpg = tee female metal PPR
+  // tee-male-metal.jpg = tee male metal PPR
+  // tee-3d.jpg = 3D tee PPR
+  // tee-3d-female-metal.jpg = 3D female metal tee
+  // y-tee.jpg = Y-tee PPR
+  { keys: ['equal tee'],                             img: BASE+'tee-female-side-bush.jpg' },
+  { keys: ['tee ppr accufit 25mm', 'tee ppr accufit 32mm',
+            'tee ppr master 25mm', 'tee ppr master 32mm',
+            'tee pvc equal'],                        img: BASE+'tee-female-side-bush.jpg' },
+  { keys: ['tee ppr accufit 25x', 'tee ppr accufit 32x',
+            'tee ppr master 25x', 'tee ppr master 32x'], img: BASE+'tee-female-side-bush.jpg' },
+  { keys: ['tee pvc', 'plug tee', 'tee mfit'],       img: BASE+'tee-reducing.jpg' },
+  { keys: ['y tee'],                                 img: BASE+'y-tee.jpg' },
+
+  // ── Sockets ─────────────────────────────────────────────────────────
+  // socket-ppr.jpg = plain PPR socket (cylindrical, green)
+  // socket-female-metal.jpg = PPR socket with female metal thread
+  // socket-male-metal.jpg = PPR socket with male metal thread
+  // reducer-socket.jpg = reducer socket (stepped, green)
+  { keys: ['socket ppr accufit 25mm', 'socket ppr accufit 32mm',
+            'socket ppr master 25mm', 'socket ppr master 32mm',
+            'socket 20mm', 'socket 25mm', 'socket 32mm',
+            'socket 40mm', 'socket 50mm', 'socket 63mm',
+            'socket 75mm', 'socket 90mm', 'socket 110mm'], img: BASE+'socket-ppr.jpg' },
+  { keys: ['socket ppr accufit 25x', 'socket ppr accufit 32x',
+            'socket ppr master 25x', 'socket ppr master 32x'], img: BASE+'socket-female-metal.jpg' },
+  { keys: ['socket mfit', 'socket pvc'],             img: BASE+'reducer-socket.jpg' },
+
+  // ── Unions ──────────────────────────────────────────────────────────
+  // union-ppr.jpg = PPRC union coupling (green)
+  // union-female-threaded.jpg = PPRC union female threaded
+  { keys: ['union accufit', 'union master'],         img: BASE+'union-ppr.jpg' },
+  { keys: ['union valve accufit', 'union valve master'], img: BASE+'union-valve.jpg' },
+
+  // ── End caps / plugs / clamps ────────────────────────────────────────
+  // end-cap.jpg = PPR end cap (rounded, green)
+  // screw-plug.jpg = PPR screw plug (threaded cap)
+  // pprc-hock.jpg = PPRC hook/C-band clamp
+  // clump-clip.jpg = pipe clamp clip
+  { keys: ['end cap'],                               img: BASE+'end-cap.jpg' },
+  { keys: ['plug accufit', 'plug master'],           img: BASE+'screw-plug.jpg' },
+  { keys: ['plug elbow'],                            img: BASE+'elbow-reducing.jpg' },
+  { keys: ['plug tee'],                              img: BASE+'tee-reducing.jpg' },
+  { keys: ['c-band'],                                img: BASE+'pprc-hock.jpg' },
+  { keys: ['clean out'],                             img: BASE+'screw-plug.jpg' },
+
+  // ── GI / Brass nipples & nozzles ────────────────────────────────────
+  { keys: ['angle nipple', 'pipe nipple'],           img: BASE+'elbow-female-metal.jpg' },
+  { keys: ['cp nozzle', 'water nozzle'],             img: BASE+'socket-male-metal.jpg' },
+
+  // ── PVC drain fittings ───────────────────────────────────────────────
+  { keys: ['p trap'],                                img: BASE+'elbow-reducing.jpg' },
+  { keys: ['bend mfit'],                             img: BASE+'elbow-reducing.jpg' },
+
+  // ── Pipes ────────────────────────────────────────────────────────────
+  // pprc-pipe-pn16.jpg = Master PPRC blue pipes PN16 (from screenshots)
+  // pprc-pipe-pn20.jpg = Master PPRC blue pipes PN20 (from screenshots)
+  { keys: ['pipe ppr accufit', 'pipe pprc accufit'], img: BASE+'pprc-pipe-pn20.jpg' },
+  { keys: ['pipe ppr master', 'pipe pprc master'],   img: BASE+'pprc-pipe-pn20.jpg' },
+  { keys: ['pipe pn16'],                             img: BASE+'pprc-pipe-pn16.jpg' },
+  { keys: ['pipe pn20'],                             img: BASE+'pprc-pipe-pn20.jpg' },
+  { keys: ['upvc pipe'],                             img: BASE+'upvc-pipes.jpg' },
+
+  // ── Taps & mixers ────────────────────────────────────────────────────
+  { keys: ['basin mixer'],                           img: BASE+'basin-mixer.jpg' },
+  { keys: ['sink mixer'],                            img: BASE+'sink-mixer.jpg' },
+  { keys: ['vanity mixer'],                          img: BASE+'vanity-mixer.jpg' },
+  { keys: ['bibcock', 'bib cock', 'double bibcock'], img: BASE+'double-bib-cock.jpg' },
+  { keys: ['single pillar cock', 'sink cock'],       img: BASE+'stop-cock.jpg' },
+  { keys: ['toilet shower', 'shower neck', 'sink shower neck', 'cp chain'], img: BASE+'muslim-shower.jpg' },
+  { keys: ['wall shower'],                           img: BASE+'wall-shower.jpg' },
+  { keys: ['muslim shower'],                         img: BASE+'muslim-shower.jpg' },
+
+  // ── Bathroom accessories ──────────────────────────────────────────────
+  { keys: ['bath accessories set', 'bathroom set'],  img: BASE+'basin-mixer.jpg' },
+  { keys: ['tissue holder'],                         img: BASE+'paper-holder.jpg' },
+  { keys: ['brush holder'],                          img: BASE+'brush-holder.jpg' },
+  { keys: ['soap dish'],                             img: BASE+'soap-dish.jpg' },
+  { keys: ['dress holder'],                          img: BASE+'towel-rail.jpg' },
+  { keys: ['mirror'],                                img: BASE+'mirror.jpg' },
+  { keys: ['sink bowl'],                             img: BASE+'sink-bowl.jpg' },
+  { keys: ['basin waste', 'sink waste'],             img: BASE+'basin-waste.jpg' },
+  { keys: ['floor waste'],                           img: BASE+'basin-waste.jpg' },
+
+  // ── Hardware / small items ────────────────────────────────────────────
+  // clump-clip.jpg = pipe clamp (C-shaped clip from screenshots)
+  // pprc-hock.jpg = PPRC hook nail clip
+  { keys: ['jubilee clamp', 'killi clamp', 'u clamp'], img: BASE+'clump-clip.jpg' },
+  { keys: ['flexible pipe', 'waste pipe', 'garden pipe'], img: BASE+'pprc-pipe-pn16.jpg' },
+  { keys: ['manhole', 'bolt kit', 'rawal plug', 'screw fastener',
+            'steel nails', 'teflon tape', 'dhaga', 'blade',
+            'hook patti', 'geezer wire'],             img: BASE+'screw-plug.jpg' },
+
+  // ── Water tanks ────────────────────────────────────────────────────────
+  { keys: ['water tank'],                            img: BASE+'water-tank.jpg' },
+
+  // ── Ceramics ───────────────────────────────────────────────────────────
+  { keys: ['wc thai', 'toilet'],                     img: BASE+'wc-toilet.jpg' },
+  { keys: ['wash basin', 'basin styilo'],             img: BASE+'wash-basin.jpg' },
 ];
 
 const FALLBACK_IMG = 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&q=80';
@@ -293,7 +363,7 @@ function renderProducts() {
           <div class="product-sku">SKU: ${sanitize(p.sku)}</div>
           <div class="product-price">${price}</div>
           <button class="quote-btn" onclick="event.stopPropagation();openQuoteModal('${p.name.replace(/'/g, "\\'")}','${p.sku}',${p.selling_price})">
-            📩 Request Quote
+            Request Quote
           </button>
         </div>
       </article>`;
@@ -386,7 +456,7 @@ function notFoundHTML() {
     <div style="font-size:3rem;margin-bottom:16px">🔍</div>
     <h2 style="color:#fff;margin-bottom:8px">Product Not Found</h2>
     <p>This product may have been removed or the link is incorrect.</p>
-    <a href="../products.html" class="btn-cta" style="display:inline-flex;margin-top:24px">← Back to Products</a>
+    <a href="../products.html" class="btn-cta" style="display:inline-flex;margin-top:24px">Back to Products</a>
   </div>`;
 }
 
@@ -416,7 +486,7 @@ function renderDetail(p) {
         </div>
         <div class="detail-actions">
           <button class="btn-whatsapp" onclick="quickWhatsApp('${p.name.replace(/'/g, "\\'")}','${p.sku}',${p.selling_price})">
-            💬 WhatsApp Us
+            WhatsApp Us
           </button>
           <a href="tel:+923185929927" class="btn-call">📞 Call Now</a>
         </div>
